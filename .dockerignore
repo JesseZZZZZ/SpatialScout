@@ -1,0 +1,11 @@
+.git
+.venv
+.python-runtime
+__pycache__
+/outputs
+/assets
+/benchmark_data
+.env
+**/api
+api-dcai
+*.zip

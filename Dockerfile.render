@@ -1,0 +1,12 @@
+FROM python:3.10-slim-bookworm
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 LP_NUM_THREADS=8
+WORKDIR /workspace
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libvulkan1 mesa-vulkan-drivers libegl1 libegl-mesa0 libgl1 libglx-mesa0 \
+    libglib2.0-0 libgomp1 libsm6 libxext6 libxrender1 \
+    build-essential cmake git ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+COPY . /workspace
+RUN SKIP_SYSTEM_PACKAGES=1 RENDER_PYTHON=python3.10 bash setup_render_environment.sh
+ENTRYPOINT ["bash", "/workspace/scripts/docker_entrypoint.sh"]
+CMD ["-m", "spatialscout.benchmark.room", "--mode", "prepare", "--catalog-scene", "ithor_kitchen_13", "--output-dir", "outputs/prepare_demo"]

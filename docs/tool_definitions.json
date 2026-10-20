@@ -1,0 +1,231 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "get_camera_pose",
+      "description": "Read camera position and full rotation matrix in the ORIGINAL camera frame.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_camera_intrinsics",
+      "description": "Read the actual 3x3 camera intrinsic matrix, image size, and clipping planes.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "set_camera_position",
+      "description": "Teleport the camera to absolute x,y,z coordinates in the ORIGINAL camera frame, in meters.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "number",
+            "description": "World x coordinate in meters"
+          },
+          "y": {
+            "type": "number",
+            "description": "World y coordinate in meters"
+          },
+          "z": {
+            "type": "number",
+            "description": "World z coordinate in meters"
+          }
+        },
+        "required": [
+          "x",
+          "y",
+          "z"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "move_camera",
+      "description": "Move relative to the camera's current heading: forward, right, up in meters, up to 1 meter per call.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "forward": {
+            "type": "number",
+            "description": "Distance in meters"
+          },
+          "right": {
+            "type": "number",
+            "description": "Distance in meters"
+          },
+          "up": {
+            "type": "number",
+            "description": "Distance in meters"
+          }
+        },
+        "required": [
+          "forward",
+          "right",
+          "up"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "rotate_camera",
+      "description": "Rotate the camera by relative yaw and pitch in degrees. Positive yaw turns counterclockwise viewed from above; positive pitch looks upward.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "yaw_deg": {
+            "type": "number"
+          },
+          "pitch_deg": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "yaw_deg",
+          "pitch_deg"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "capture_image",
+      "description": "Capture the camera's current RGB image. The PNG is saved locally and the image is sent to your vision input.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "list_entities",
+      "description": "List every target entity ID and category in this room. No locations are revealed.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "triangulate_observations",
+      "description": "Estimate one entity's absolute 3D center from the same image point marked in two or more captured frames taken from different camera positions. Returns the least-squares ray intersection and ray mismatch; no ground truth is used.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "observations": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "properties": {
+                "frame": {
+                  "type": "string",
+                  "description": "Captured filename, such as frame_0001.png"
+                },
+                "pixel_xy": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 2,
+                  "maxItems": 2
+                }
+              },
+              "required": [
+                "frame",
+                "pixel_xy"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "id",
+          "observations"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "submit_positions",
+      "description": "Submit or update a batch of estimated geometric-center coordinates in the original-camera frame. Use exact entity IDs from the library. You may call this repeatedly.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "predictions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "xyz_m": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 3,
+                  "maxItems": 3
+                }
+              },
+              "required": [
+                "id",
+                "xyz_m"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "predictions"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "finish_mapping",
+      "description": "Finish exploration and score all submitted positions. Missing IDs count as missing predictions.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    }
+  }
+]

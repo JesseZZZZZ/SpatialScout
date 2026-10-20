@@ -1,0 +1,1989 @@
+{
+  "created_utc": "2026-10-20T03:27:39.781130+00:00",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "bytes": 99,
+      "sha256": "21e5b42f18df5399f7046a6095d11ef2f94980e856ca286aafc7a8e842be1570"
+    },
+    {
+      "path": ".env.example",
+      "bytes": 309,
+      "sha256": "5c8c91114e287ff25250e1fba6fae778146582d692a575bcfd674727ef04276d"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 200,
+      "sha256": "7a3392185c57e16af232faac3c97a9e5996bad465af1a5df1667d23a082c1cdb"
+    },
+    {
+      "path": "Dockerfile.render",
+      "bytes": 708,
+      "sha256": "7b347683fa5ac15fb6b067f3bae77960b6d759d9622adb0468b2b9dffe25fbb0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 15044,
+      "sha256": "4cc2f0d6a867c9e30ca967234d4fd79532a37847f49adad37359510b0418d604"
+    },
+    {
+      "path": "README_zh.md",
+      "bytes": 5711,
+      "sha256": "2c9cfa598e04aeb11a410255e573a8fd44094079d5860cb7f7ce4fda3c76c631"
+    },
+    {
+      "path": "RENDER_README.txt",
+      "bytes": 503,
+      "sha256": "3cb50be42bdd16d21af42d2dd0b3f70048e3650c515d23345f5b7f647d161254"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 714,
+      "sha256": "cdda05f972810327a4e944cd1a260511520af454baf671e0b652716d31dde96a"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 316,
+      "sha256": "21c1f96e441ef0f6b59f79fd8df231bf21bd1a43770d9c931f8a920c2476e832"
+    },
+    {
+      "path": "render_env.sh",
+      "bytes": 1078,
+      "sha256": "956f2a1b226d37fc6810f20b14d4e3b5dd6cf4f028e574b6b8958547c2963f46"
+    },
+    {
+      "path": "run_prepared_80.sh",
+      "bytes": 2456,
+      "sha256": "8fd484fb6fb50bf65ef390580c7161086bee42d92b48d80d0a2e755418506bce"
+    },
+    {
+      "path": "run_prepared_80_anthropic.sh",
+      "bytes": 220,
+      "sha256": "697016f8e8417d6764b782fc4466e64aea8016128dd36d9a884a3345e81e245e"
+    },
+    {
+      "path": "run_prepared_80_gemini.sh",
+      "bytes": 258,
+      "sha256": "16e757a6eab5df852d457e9d534bcf8088adc9780fc9b3d182bd703cc8b3cb10"
+    },
+    {
+      "path": "setup_headless.sh",
+      "bytes": 97,
+      "sha256": "9095574c7b6254011513aae7f46d420770c30e174fd3cb78fce2d823b3471d14"
+    },
+    {
+      "path": "setup_render_environment.sh",
+      "bytes": 1598,
+      "sha256": "89c1bee9e840b54318ba4bc216c6ea43409824cadb32b33667291b30299911d6"
+    },
+    {
+      "path": "ManiSkill3/.pre-commit-config.yaml",
+      "bytes": 948,
+      "sha256": "be262171af98e8567803fa7edd1107487bdd272ac943688d56ffa2a70416bf83"
+    },
+    {
+      "path": "ManiSkill3/.readthedocs.yaml",
+      "bytes": 271,
+      "sha256": "79480f8fe3b08c52e1584fbe03ee154933b2c31fd71abcb916a65135b25646f0"
+    },
+    {
+      "path": "ManiSkill3/CITATION.cff",
+      "bytes": 1975,
+      "sha256": "a2b3251523c91039cac361d553c1280443f0cf78af894ead30013bf45d039049"
+    },
+    {
+      "path": "ManiSkill3/CONTRIBUTING.md",
+      "bytes": 3229,
+      "sha256": "b1cf657fa46c0475b9141c8540a78785bcb268bc7dfceaa53f71b2e61c0d6735"
+    },
+    {
+      "path": "ManiSkill3/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "ManiSkill3/README.md",
+      "bytes": 7257,
+      "sha256": "dbd204e989e4b78c298728af3da125229f1e8557e2c6f489be8fd8efbb237d93"
+    },
+    {
+      "path": "ManiSkill3/pyproject.toml",
+      "bytes": 317,
+      "sha256": "bdb460769346d6a0b6938544783e21ec645c59bb2b1da37770b2c6bb4dab1a8f"
+    },
+    {
+      "path": "ManiSkill3/pyrightconfig.json",
+      "bytes": 82,
+      "sha256": "8c2e88a8d8818cb11140c0da3cc2f68731e19bd97d9f98e786d171bb8df71992"
+    },
+    {
+      "path": "ManiSkill3/setup.py",
+      "bytes": 3687,
+      "sha256": "33db55b52f4279397eed077b8a7256fe5a2fac3310841acb11b004b2033d70e2"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/__init__.py",
+      "bytes": 2021,
+      "sha256": "816129a01905f5ff84aedfbbb3fff5ab8b114a7044fa7f7b3f929269b9952926"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/README.md",
+      "bytes": 383,
+      "sha256": "740afc742c602bc51c64e347cbafe477cfd09eafe985e84befee9ecf489e58b4"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/__init__.py",
+      "bytes": 44,
+      "sha256": "eaeee751f583a96983fe278d84409f855ea62327f84a631dba67b113695196c5"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/base_agent.py",
+      "bytes": 16971,
+      "sha256": "34d94e75baed67c73f6e462311cbcf003dc51ffa716271de3d9d129db9657c2e"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/multi_agent.py",
+      "bytes": 2970,
+      "sha256": "38beec3c3c0fd467e7f3bd16dcb44d870b0fa7b1b2e76b1d608e0bc92bda1b34"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/registration.py",
+      "bytes": 1331,
+      "sha256": "aedbbdbc0cacfd0cfbe9df4bb03169a9a9d9c5a1622d23d96a3037b8717d1c74"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/utils.py",
+      "bytes": 1912,
+      "sha256": "53cc1d82c34745af91b650b71d033cfc0827f4ff364c87b766b5deb5a30c53f5"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/controllers/__init__.py",
+      "bytes": 1103,
+      "sha256": "b6c776edd5ba6eb4019b9eb709d7541ad14c04d0317bf302a53aaa47957225a6"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/controllers/base_controller.py",
+      "bytes": 11779,
+      "sha256": "f33d6ef70a9ac8fdc5a1ffa97166b9dc1d4b099d01c350bef8ca7304725258ca"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/controllers/passive_controller.py",
+      "bytes": 1264,
+      "sha256": "47e8597aec6634a03d4ef0d9cd529df9822fe39c44e2d73ac0c1daae076bc636"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/controllers/pd_base_vel.py",
+      "bytes": 2868,
+      "sha256": "fb76732d9f674433061d69c513b738ade11b0b78c7b502423b1dcb980af3f798"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/controllers/pd_ee_pose.py",
+      "bytes": 11464,
+      "sha256": "324405d63a4d683e5036caccec93a25a2ff069048c7f3eefc3c8d707858afd0e"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/controllers/pd_joint_pos.py",
+      "bytes": 4823,
+      "sha256": "31e2a32387179e200c6353e08d48798ddbc6edd5c2505748774c9691058c7d20"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/controllers/pd_joint_pos_vel.py",
+      "bytes": 2433,
+      "sha256": "1bc48121af2333ddfdcc60844d8d7b4659b01e81cb4b988231366c619687d666"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/controllers/pd_joint_vel.py",
+      "bytes": 1900,
+      "sha256": "5d02b5de5b1bb5e794b33b46c34bbe0c2060082bf40a1825be7720c315500966"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/controllers/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/controllers/utils/kinematics.py",
+      "bytes": 8038,
+      "sha256": "7f7a90a7c898e27a629618cbcc2b536d25feb9c8743c9e46b4882b8a39917e96"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/__init__.py",
+      "bytes": 543,
+      "sha256": "18729b70de20034551b1ae513afc86da09f98c4b71251dc953f3babdee3a2dc2"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/_template/template_robot.py",
+      "bytes": 1663,
+      "sha256": "483f69e31538c27f41c53d3f144c987b0a983324bf3b0fc569d086904685bb50"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/allegro_hand/__init__.py",
+      "bytes": 104,
+      "sha256": "3d61fa30cbf68b9835c62efafc4f9824bb4a14b54ac6426043de860ff61e40de"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/allegro_hand/allegro.py",
+      "bytes": 5213,
+      "sha256": "521e73e1fec3a9b29ae9af4c65252bf77a0c23ab2df791e724bc41e6423b8ff1"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/allegro_hand/allegro_touch.py",
+      "bytes": 5805,
+      "sha256": "08c9c621fd494fb8dbacce6373e3877ce0de622c2b529f2bcee4bdad433398ae"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/anymal/__init__.py",
+      "bytes": 30,
+      "sha256": "5c97a28992ef31839b97c713267e3f29610a299e8af7d37a3691c01303536d66"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/anymal/anymal_c.py",
+      "bytes": 4120,
+      "sha256": "a7b0ee2c323bcb1dbf0b5120d955e935300a090ac43c5a68fa5514dab5750cf9"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/dclaw/__init__.py",
+      "bytes": 25,
+      "sha256": "b7555218ddd6630f5fde647bfccd3cf958420503d63a2eef2b3ed1cf74fc2894"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/dclaw/dclaw.py",
+      "bytes": 4064,
+      "sha256": "07ba6c3d91d5ec59bd83fc9f05866c1faa3447dc74ee091dd3ef85c6a8b18a4b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/fetch/__init__.py",
+      "bytes": 79,
+      "sha256": "ab7400da8193c7e2e076609ba5edf0a63d627e8aa18450ddacc3170b8dcdb2e7"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/fetch/fetch.py",
+      "bytes": 15448,
+      "sha256": "de29886f08528db2320989395f6c5f9bbb95af5f8b305d1cc9754082376000a9"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/floating_panda_gripper/__init__.py",
+      "bytes": 57,
+      "sha256": "0305744a697b0e641bea193816a6f11dd3bbfd75c71cc86b399b59464e9df8fa"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/floating_panda_gripper/floating_panda_gripper.py",
+      "bytes": 5071,
+      "sha256": "d12a70832d2dfb765cffc25a0d2d86ea99a47c2f35ba2febf0faa45aac5baebf"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/floating_robotiq_2f_85_gripper/__init__.py",
+      "bytes": 71,
+      "sha256": "6c15d1c8ae27717f59bfa4793571070fd7fa853f40d8f644b06d27e0aefa7f4d"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/floating_robotiq_2f_85_gripper/floating_robotiq_2f_85_gripper.py",
+      "bytes": 5895,
+      "sha256": "31c1a8ac7250a4613d87b2d0387239e511362bf6b96d78817e082627d5aa11dd"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/googlerobot/__init__.py",
+      "bytes": 37,
+      "sha256": "6bbe171934abf30de9ea5947b34d520e7893a9350ff07dd0bca615bf2cbd6bfb"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/googlerobot/googlerobot.py",
+      "bytes": 993,
+      "sha256": "cb812f1f03e17e3d3017a812ed456fd87a582a8b3a3e96d263f66056716f0d9d"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/humanoid/__init__.py",
+      "bytes": 31,
+      "sha256": "7cfd13221a243170d181dbb3e8112f968792eb2341fb9fdcd3023f71314e8885"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/humanoid/humanoid.py",
+      "bytes": 3793,
+      "sha256": "434feeb899c48f50cac067be09c07cde590b164ab5bcbe7e59dc99ab94847ff7"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/panda/__init__.py",
+      "bytes": 102,
+      "sha256": "5671492dc98f3018e8fa6941a5f328e5a7182ae77fc2781101c7faeee8ae8129"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/panda/panda.py",
+      "bytes": 10546,
+      "sha256": "c29ff097a17908e594484fb38cd7fca3e2425bfb4fae44cfe998052557146971"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/panda/panda_stick.py",
+      "bytes": 5659,
+      "sha256": "ca562f8dc81accc7e9da4f913dbc64141c87f6ac932c3f1b783a76adafd65aca"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/panda/panda_wristcam.py",
+      "bytes": 875,
+      "sha256": "792c3ae7609a03cd987deb42a9ab0718071491a27f6972628c99bab476662b24"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/stompy/__init__.py",
+      "bytes": 27,
+      "sha256": "7cdbaa789a8a9de1cf9f3be30d8b736e9577308186965f3e08ca24f3d85fd33a"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/stompy/stompy.py",
+      "bytes": 4052,
+      "sha256": "768048d1ce1009b8c289a1c0c5d9e023bdd4c7f212072e8de494e03e8beb5f7e"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/trifingerpro/__init__.py",
+      "bytes": 38,
+      "sha256": "f487b40e96e35f191888366e08548cc9c59a7ee3092f00745da4d2ba20a813e1"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/trifingerpro/trifingerpro.py",
+      "bytes": 6192,
+      "sha256": "9734b1b16171b95d5ef06d231b4c8b78e9ec139dd5b9d3416a254ff106192b7e"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/unitree_g1/__init__.py",
+      "bytes": 93,
+      "sha256": "9d133dd80abff476fa6418c3904790107a2e53fa900527a59b81bca320c36786"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/unitree_g1/g1.py",
+      "bytes": 5999,
+      "sha256": "2b182ca589fc14f58a4c87176806a538a9b0eeaf1b9d44d152c68dd6cb19c639"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/unitree_g1/g1_upper_body.py",
+      "bytes": 14283,
+      "sha256": "587d1b12635ce62b29f7a1fea21f170ede02b9b78fb058be5d4443df63ee0765"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/unitree_go/__init__.py",
+      "bytes": 36,
+      "sha256": "05a35c81782a5ad43d01152a12a62c933b5a8931ca5e2ff148a7df58bf6ae8bf"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/unitree_go/unitree_go2.py",
+      "bytes": 2788,
+      "sha256": "481c02ee18d2a362b1a156b0d0c8bf75557cb88e46b841ee25cbc8eb7f4d2dc7"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/unitree_h1/__init__.py",
+      "bytes": 99,
+      "sha256": "a040a94315878b407b77349aa3ad45a64fd58f0476c1645cf4353a3492220bcd"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/unitree_h1/h1.py",
+      "bytes": 3761,
+      "sha256": "5405d20184137d7816cd2835b3d1c42807c97f469ba3a5fd4047c744558c36ca"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/unitree_h1/h1_dextrous_hand.py",
+      "bytes": 10053,
+      "sha256": "be027cd043d693f99b7d1497c95b3a18134afc243e988e6d0eb65d260e626174"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/ur_e/__init__.py",
+      "bytes": 26,
+      "sha256": "a0ed39c940cc2f28e71cabc82a9aa13e1cce1da2b36a7ea04a0aeb1bfe944059"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/ur_e/ur_10e.py",
+      "bytes": 1301,
+      "sha256": "0f3915a71898600855dffe38af6a33f3171115d328caa2177801c325f94ea455"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/widowx/__init__.py",
+      "bytes": 31,
+      "sha256": "449c6031e71b159ef068c1104b096fead6e41947979cc04ac2c1bc3a39773b00"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/widowx/widowx.py",
+      "bytes": 2415,
+      "sha256": "dd0a570af8050e73d83a6adb0c6c6a5558d2c97cc6d451bfefab7211edc030fe"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/xarm/__init__.py",
+      "bytes": 40,
+      "sha256": "e8c867e2f5787fd5f170ae3ddd4e56f5513ac861a0c9d3db5502e8f623aef010"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/xarm/xarm7_ability.py",
+      "bytes": 6106,
+      "sha256": "ca3ec25014296c6554893db6ab07892939e2244d03c5d132c8a8f7dbdbebd076"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/xmate3/__init__.py",
+      "bytes": 34,
+      "sha256": "aba9d0ad0a282a14cd9cbd9270898f9b67945586e1f1eac7a39535bba1f3781f"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/agents/robots/xmate3/xmate3.py",
+      "bytes": 7979,
+      "sha256": "0b9e913f1409a7ea75e16c3492566500ed6ff3ed88a0d014b00708b4aa438e59"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/partnet_mobility/meta/info_bucket_train.json",
+      "bytes": 2294,
+      "sha256": "abfc0764d834f4b7d1b73a83785c0753fe8a882cb84fe324e11495bca96b6397"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/partnet_mobility/meta/info_cabinet_door_train.json",
+      "bytes": 5261,
+      "sha256": "4cfa3763bdd2dd397afe202c9c1fabaef32194714c384fde28104c000153e1e2"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/partnet_mobility/meta/info_cabinet_drawer_train.json",
+      "bytes": 3132,
+      "sha256": "8a98abae0ffa0e919069795d36a618148be94e739215c98d08d6639626ec560b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/partnet_mobility/meta/info_chair_train.json",
+      "bytes": 23046,
+      "sha256": "d39eb66b0f233ab088a6d7e85153ad85b65f497d2b9f2e02b2551700e917ddec"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/partnet_mobility/meta/info_faucet_train.json",
+      "bytes": 32349,
+      "sha256": "0755b037e7c5df45a9584a9ec9de4de449786de8dfd34c37208e026372ef152b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/ability_hand/ability_hand_left.urdf",
+      "bytes": 18094,
+      "sha256": "bd54257c678bb95468a473518b63aabf50be90e5b1cbc791d22cb8cd043424c2"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/ability_hand/ability_hand_left_glb.urdf",
+      "bytes": 18094,
+      "sha256": "57a5d405482c7fd543cc5390162bff3a00a537d6cf0cec270317739445a3f992"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/ability_hand/ability_hand_right.urdf",
+      "bytes": 18377,
+      "sha256": "395bcf4963b5e05a0f6f5333c1a3537db4e24cefc4348e290424fb59120e3fb3"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/ability_hand/ability_hand_right_glb.urdf",
+      "bytes": 18377,
+      "sha256": "bf7cb29b5a622a648d7887c0f5d60074ca00a3c9dc135502a8ace388e0d73b12"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/allegro/LICENSE",
+      "bytes": 812,
+      "sha256": "63038cb4a3680ffd24103a3874d25ce3ddf0741ea6ffe5eed6d84286b2e5970e"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/allegro/allegro_hand_left.urdf",
+      "bytes": 16521,
+      "sha256": "a36fbc3c2926b04f37a04425548d6c9af303cf112a8685854a7e0e96a6c9ab1b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/allegro/allegro_hand_left_glb.urdf",
+      "bytes": 16521,
+      "sha256": "862c6975bfae81bf2c433770f1e81f03f2bbadd23001d040633609ac0b6617fb"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/allegro/allegro_hand_right.urdf",
+      "bytes": 16466,
+      "sha256": "b7574d9fea40364c348fc6b26385b41b0cec77746ad18e554cfc2aa93673a0f7"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/allegro/allegro_hand_right_glb.urdf",
+      "bytes": 16466,
+      "sha256": "9efbf7daa25f1d774929fe309b5b6935751251a40e3dc5b5fcbfc1196f0b153e"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/allegro/variation/allegro_hand_right_fsr.urdf",
+      "bytes": 25342,
+      "sha256": "effa52d8ae3dff4f4fa8fbcdeac91b94e619fa0aba290f3216bfd96660f5253b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/allegro/variation/allegro_hand_right_fsr_glb.urdf",
+      "bytes": 25342,
+      "sha256": "2b0869bd55704c82cbdfc891b11b1254488b479f6a278d682f1f0a3d07fef1dd"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/allegro/variation/allegro_hand_right_fsr_simple.urdf",
+      "bytes": 25252,
+      "sha256": "55e926b8e0741dfa9c7e3401db44320cb21599d297b5291f1979caf6f77b0f91"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/dclaw/LICENSE",
+      "bytes": 11694,
+      "sha256": "805d0d0753f5159a44a6faf20117eb3cf161061aa4823ee2c9ce835203d101e9"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/dclaw/dclaw_gripper_glb.urdf",
+      "bytes": 14357,
+      "sha256": "5a7140f15a566bc9cf6327ab2f09e86f82df36f8b9f5c72fd1126d827585d611"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/fetch/fetch.srdf",
+      "bytes": 928,
+      "sha256": "bf78fc034a135f809be3ee96d967b1a79bcfafa1776a117322e9f9f2a3525546"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/fetch/fetch.urdf",
+      "bytes": 21990,
+      "sha256": "7503ea2dc96eb3d1130c81f7ff1e397f30df46459b3dbf10cf5d0d247c5b1256"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/g1_humanoid/LICENSE.txt",
+      "bytes": 1559,
+      "sha256": "2b794acf1e250f5545ae5a47d81e5685ea5488ce077d1087ed8be5f81e9ba5c0"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/g1_humanoid/README.md",
+      "bytes": 227,
+      "sha256": "f10e99e108577d905e83a9ce302dc4344aad2fd4dc0353d70c5d65bb0e7425f4"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/g1_humanoid/g1.urdf",
+      "bytes": 44466,
+      "sha256": "d446ad17340485f694ea17746fcb6e5f09a423cf14aa38efefc8aaefb6d07353"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/g1_humanoid/g1_simplified_legs.urdf",
+      "bytes": 36723,
+      "sha256": "9b1d65ffd1ca63f963359dc4262fae3e3981854abd9e75bc65805c57cabdaaf3"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/g1_humanoid/g1_simplified_upper_body.urdf",
+      "bytes": 45313,
+      "sha256": "3ab8835fb251c8313974c13cb9e943e09fbeed9575ec86c36002ee6436868344"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/humanoid/humanoid.xml",
+      "bytes": 11685,
+      "sha256": "baa3e731ccb5f7871a54a192c3edc7ab5c8301e8c7393b6803c7fe6b2d38c24b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/humanoid/common/materials.xml",
+      "bytes": 1108,
+      "sha256": "5f1279351cd6e7f83fa4a2e733558ffb297ad19f9bd4e757bdaec6e7d36a777c"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/humanoid/common/skybox.xml",
+      "bytes": 202,
+      "sha256": "52f3687ca30329b4077b0a26feaad9b73d201e183cbde0ffbd6cd52de51907bd"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/humanoid/common/visual.xml",
+      "bytes": 175,
+      "sha256": "ec1d274ab70d95604133dafa92c0d1194de51bba997bd53b70bc67eb95d823fc"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/panda/mobile_panda_dual_arm.urdf",
+      "bytes": 28443,
+      "sha256": "2c8073bc17ce0bb71a9a021b3405973755aa00dfa6b55f5e5e8c1e372e54bfae"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/panda/mobile_panda_single_arm.urdf",
+      "bytes": 16761,
+      "sha256": "2d79ac57ce7e0af3b6947acdeda97233f785168578c78708a428e2c1bc8554e1"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/panda/panda_bucket.srdf",
+      "bytes": 52,
+      "sha256": "a79c5c555d9d24d3445c8fd6297617e7870e161e389787d5fa19ffbdd7389114"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/panda/panda_bucket.urdf",
+      "bytes": 8885,
+      "sha256": "358d5fce6109b120a133ea64763d73d4d6c48e74c99ede04016cf1fc673447c5"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/panda/panda_pinch.srdf",
+      "bytes": 5549,
+      "sha256": "e1ab0d4f59819dc47b5de702080867cb4b99c5076449abd049d417649334733c"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/panda/panda_pinch.urdf",
+      "bytes": 11065,
+      "sha256": "4dc8a11b2c01ec69a4f4819ba77ceadaa1c7dd824aac9b9504e90a2e2e19b162"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/panda/panda_stick.srdf",
+      "bytes": 4857,
+      "sha256": "107a7cde963030a1d7b04162504d4a3dd45742f8e70e65e720fa4ffa82d2c986"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/panda/panda_stick.urdf",
+      "bytes": 9386,
+      "sha256": "b29dc3ced2df06792af4cce993ae6656512415c1264a6613c0ee6f56cee32e17"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/panda/panda_v2.srdf",
+      "bytes": 5727,
+      "sha256": "00d8beb0b638928ab5ce272aa5daf7e80d56b556555c2aa18d9c677ef826e6e4"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/panda/panda_v2.urdf",
+      "bytes": 12821,
+      "sha256": "524c6986dbbabe244e05801f262862205e880834d01459b06ee273016d0579ba"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/panda/panda_v2_gripper.urdf",
+      "bytes": 6918,
+      "sha256": "1bf0e8446c4c18b40bc159328cd723e23df9abb3c1b97752c9f6f0dfb37c59fa"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/panda/panda_v3.srdf",
+      "bytes": 6151,
+      "sha256": "914d50f60103ca85d90c940b0006f42e993b537b0cc90d04f2bcae93d988c308"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/panda/panda_v3.urdf",
+      "bytes": 13483,
+      "sha256": "d040277352476639950e2ddce1dff8a1c0e95df470e5e9ed186cd01c468fa412"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/panda/realsense2_description/CHANGELOG.rst",
+      "bytes": 1277,
+      "sha256": "27bc072137e1df02a4d0ef706018e3197b23a05587e931440646e3cf9706769f"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/panda/realsense2_description/CMakeLists.txt",
+      "bytes": 347,
+      "sha256": "3e8a7a7e2cf59d848c91e2e4c6adcfc9996901850fe19169dc75c301b7dc32df"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/panda/realsense2_description/package.xml",
+      "bytes": 803,
+      "sha256": "a85a198dba9be51b236fca33c091ded088272d1f752c170e267c57478762d46b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/cube_multicolor_rrc.urdf",
+      "bytes": 451,
+      "sha256": "709d5bed0b18cb5699a40548f9b1a42f9c4fcb34074e847073055924b4c60ae6"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/high_table_boundary.urdf",
+      "bytes": 1343,
+      "sha256": "29a943a45d7d757b8db9adba4471a44f2733d52f83579ed3fbd4fb3539603821"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/table_without_border.urdf",
+      "bytes": 1545,
+      "sha256": "3f6cb7c1ab609489ef9ad80f89d7974044fcfca9535738de83d5e5116fceee56"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/trifingerpro.urdf",
+      "bytes": 26094,
+      "sha256": "d51019819eb397f614c38818ff3e2fb39a4a9ca64181ff3dca17eb502935327b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/objects/urdf/ball.urdf",
+      "bytes": 764,
+      "sha256": "0ea97d86137becba2c799c7203dca876e6cb4e8ed9d239f3c4f4ebfdc498d673"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/objects/urdf/cube_goal_multicolor.urdf",
+      "bytes": 445,
+      "sha256": "16b5babd6465879f9594b87c94bd4403e90e2338e0d912521f07f0306a4d8faf"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/objects/urdf/cube_multicolor.urdf",
+      "bytes": 445,
+      "sha256": "16b5babd6465879f9594b87c94bd4403e90e2338e0d912521f07f0306a4d8faf"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/objects/urdf/cube_multicolor_rrc.urdf",
+      "bytes": 451,
+      "sha256": "709d5bed0b18cb5699a40548f9b1a42f9c4fcb34074e847073055924b4c60ae6"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/objects/urdf/cube_multicolor_rrc_phase3.urdf",
+      "bytes": 443,
+      "sha256": "e2bf1426efbfbc837e2075c59ff20fa7b869bdbc5a8a1bd45279d8f357202a4f"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/robot_properties_fingers/urdf/finger.urdf",
+      "bytes": 8393,
+      "sha256": "0c86330db00d522924f3b796c7339acacb600485badf5bc953f02b6a8e904bd5"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/robot_properties_fingers/urdf/finger_macro.urdf",
+      "bytes": 782,
+      "sha256": "08690372fa47c40b43f0e94b3544a66934dd60fe13601598a75f2b95a4e69d6a"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/robot_properties_fingers/urdf/finger_with_stage.urdf",
+      "bytes": 9428,
+      "sha256": "bcd29f14465958ec43d1b34a9f7a5188d43663442ab74f708dca11b7a88cb26b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/robot_properties_fingers/urdf/high_table_boundary.urdf",
+      "bytes": 1343,
+      "sha256": "29a943a45d7d757b8db9adba4471a44f2733d52f83579ed3fbd4fb3539603821"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/robot_properties_fingers/urdf/stage.urdf",
+      "bytes": 1251,
+      "sha256": "c3b6c43d12fd9b9bff218b4d0b9fd799906e3c1f4f66c8eb6ae90840d7271eea"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/robot_properties_fingers/urdf/table_without_border.urdf",
+      "bytes": 1545,
+      "sha256": "3f6cb7c1ab609489ef9ad80f89d7974044fcfca9535738de83d5e5116fceee56"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/robot_properties_fingers/urdf/trifinger.urdf",
+      "bytes": 17896,
+      "sha256": "79eff97fe9663bcbbe3bd1dde8b3dff6616fc38ca6970acdd54901cf40e5c464"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/robot_properties_fingers/urdf/trifinger_stage.urdf",
+      "bytes": 2409,
+      "sha256": "b35706b58b66b6f7273fdaca798f05e9153ffb5f06a208ee8afd60535652097f"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/robot_properties_fingers/urdf/trifinger_with_stage.urdf",
+      "bytes": 19857,
+      "sha256": "c2b57b57f1042db14cba0555beb30c425ae9138f7b7fe262bae752e84ff77da3"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/robot_properties_fingers/urdf/edu/fingeredu.urdf",
+      "bytes": 8379,
+      "sha256": "65bc42e33d6f4d27718b1fd7409862bbca58148fac9486a11283817f45068ba0"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/robot_properties_fingers/urdf/edu/trifingeredu.urdf",
+      "bytes": 23069,
+      "sha256": "7988050693876d80ce7803706efc3206eafba33e42a5a9a51716b64732b04aab"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/robot_properties_fingers/urdf/edu/trifingeredu_stage.urdf",
+      "bytes": 2324,
+      "sha256": "4b55076aa1753b3abc2d3816e3c8d06eab70907644133b8de78b19d3b00fae4a"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/robot_properties_fingers/urdf/edu/trifingeredu_with_stage.urdf",
+      "bytes": 24943,
+      "sha256": "9eb7b733ce25d16d8a520256e6eac50f807601ebd0cbd63a748daca97bcc48ac"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/robot_properties_fingers/urdf/pro/fingerpro.urdf",
+      "bytes": 10578,
+      "sha256": "01caa22c970dfa5ad9d988f209e7026d5bdd44de24c9f011e03b1b692d3bd3ba"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/robot_properties_fingers/urdf/pro/trifingerpro.urdf",
+      "bytes": 26094,
+      "sha256": "d51019819eb397f614c38818ff3e2fb39a4a9ca64181ff3dca17eb502935327b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/trifinger/robot_properties_fingers/urdf/pro/trifingerpro_with_stage.urdf",
+      "bytes": 28063,
+      "sha256": "37987c27921d538888fcfe556ea2d8ee7c4cc085bc9e283990ac2cb24936656e"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/xarm7/xarm7.urdf",
+      "bytes": 7095,
+      "sha256": "c64a9e686d885fc024bb70ff069171fbd67698a2e5a30a97755581ff5ea9abb1"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/xarm7/xarm7_ability_right_hand.srdf",
+      "bytes": 3163,
+      "sha256": "e7b7b5472837c5baaa82af4da3f506b52260a9e69fa1f4b657dc9e8135e342d1"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/assets/robots/xarm7/xarm7_ability_right_hand.urdf",
+      "bytes": 25665,
+      "sha256": "1f2345e75769d6b5cf2ada1796c1952ca330fe4341b3e7e12cb20c814ed7a780"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/__init__.py",
+      "bytes": 43,
+      "sha256": "60f96db4112b4dc7fdbd29e4679e0443cbd300149f145ac1754634024178be68"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/minimal_template.py",
+      "bytes": 2200,
+      "sha256": "f531c7580d6f9076ada6d73d8393a387e50150a59098b1d57aae1f71aaafd9a6"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/sapien_env.py",
+      "bytes": 68005,
+      "sha256": "118eb0fbc110b624d71e4bab868433b5611ce8d6f54126b044ae510d8c2013bb"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/scene.py",
+      "bytes": 45376,
+      "sha256": "e4d0abe7d2c9e6577b959f8cbd79c58b81b50323251dc55d9d0dc0d374d70efb"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/template.py",
+      "bytes": 11939,
+      "sha256": "d309f02a39c6385ed1bd34791b3e15a29694885c67222a17c266f89cf57102cf"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/scenes/__init__.py",
+      "bytes": 868,
+      "sha256": "b8bd93dc0ba8524a9ed855e6163a3839000c403b1e3daeaa5630a313324baad1"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/scenes/base_env.py",
+      "bytes": 7069,
+      "sha256": "2024378d591d2e5a17602ac6a85312a27faccae51800f89cff9977166e11510b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/__init__.py",
+      "bytes": 298,
+      "sha256": "7875c45eadbc63f408002b008993070ca602b8d1e9033d4c9983df3dadb8ecdb"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/empty_env.py",
+      "bytes": 1720,
+      "sha256": "be5dcffc50a2625c2832d42574329609551781869153e2e8ee775c3597896d90"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/rotate_cube.py",
+      "bytes": 14834,
+      "sha256": "25ed116cbcacc0d6cd95ca8c617172ab51f791345851509ad840e29d8616c27b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/control/README.md",
+      "bytes": 167,
+      "sha256": "e36f70131a5e200e8f241b2c75eb0eb077164229c54e7b83d485a4e8a388418f"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/control/__init__.py",
+      "bytes": 206,
+      "sha256": "c05dd60a408fb5ca1c5181272ce46a19e84389486aba188b4b716cc68170c7f0"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/control/ant.py",
+      "bytes": 10852,
+      "sha256": "05cb322336ec258d6ab6feb5a90df2f67d583a8716dbd0bc2e7e21ee75ef3f0d"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/control/cartpole.py",
+      "bytes": 8384,
+      "sha256": "7b2d88a21982f0cc7ad57637e255e6497c219b39f252a42caeb8a3d19722c650"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/control/hopper.py",
+      "bytes": 9801,
+      "sha256": "ab7cf3be2524b53ce9854f5fda53835261d7f126f28830f330c4f413553161a7"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/control/humanoid.py",
+      "bytes": 19070,
+      "sha256": "e95daf3fbfab9a154cbdb5711ecc0a9973b52bb35e9b6f0fd431d5965872fdcb"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/control/assets/ant.xml",
+      "bytes": 4630,
+      "sha256": "9e60c7fbbce876b4aa16c13f54c14b472bd00cc5204060798590bd7b2d3cb030"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/control/assets/cartpole.xml",
+      "bytes": 1460,
+      "sha256": "1d6058ebf2bee9709c6557db46174d5ffda315467b8711a20667192b12e6cb24"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/control/assets/hopper.xml",
+      "bytes": 2842,
+      "sha256": "29ecc144dc3e6dd62c3a65daa61d0fe98d6e532874a984ab43e078995da8fe36"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/control/assets/common/materials.xml",
+      "bytes": 1108,
+      "sha256": "5f1279351cd6e7f83fa4a2e733558ffb297ad19f9bd4e757bdaec6e7d36a777c"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/control/assets/common/skybox.xml",
+      "bytes": 202,
+      "sha256": "52f3687ca30329b4077b0a26feaad9b73d201e183cbde0ffbd6cd52de51907bd"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/control/assets/common/visual.xml",
+      "bytes": 175,
+      "sha256": "ec1d274ab70d95604133dafa92c0d1194de51bba997bd53b70bc67eb95d823fc"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/dexterity/__init__.py",
+      "bytes": 121,
+      "sha256": "c175c603a65d6391c4c5c9dfdc3bb1e2c3055209968f220a4e3585ecf0986085"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/dexterity/rotate_single_object_in_hand.py",
+      "bytes": 14176,
+      "sha256": "48e5cabf8f9c6777f056db5c46209ac25434b25df991bf73845225f4315c00fb"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/dexterity/rotate_valve.py",
+      "bytes": 11670,
+      "sha256": "3901f215cf13c8402b83f7df3e344a459e64ed6a7e605d3eb9337886ce09727b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/digital_twins/__init__.py",
+      "bytes": 35,
+      "sha256": "b69ee8773e1266a90cddda4ef07890b88c040b299b2ed417203706ef54f659f0"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/digital_twins/base_env.py",
+      "bytes": 6644,
+      "sha256": "e440137e65b58de7f9a2877420afa8baf13a18d9e62a5462b47f24efe493c953"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/digital_twins/bridge_dataset_eval/__init__.py",
+      "bytes": 172,
+      "sha256": "da8931c9ed1383f92698a3573fb878325031c464b970913738a028e0b21501cb"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/digital_twins/bridge_dataset_eval/base_env.py",
+      "bytes": 21687,
+      "sha256": "3a3f376c3d817686372aac94ef33d447ef6bcdb5773c088d99a0a3ba28f72fc1"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/digital_twins/bridge_dataset_eval/put_on_in_scene.py",
+      "bytes": 9044,
+      "sha256": "2411a38475f721b52856952620d9ceab0815aab2b55488f07243e5f7a887bc82"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/drawing/__init__.py",
+      "bytes": 20,
+      "sha256": "c645ad5b8ce229795c4a8911c473e369561a229510a1546185141dc726626d7e"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/drawing/draw.py",
+      "bytes": 8146,
+      "sha256": "5a5871263b74f83964c42dedfa8d0cf01a0ec1dc16a4cf6b7aea458393aa8997"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/fmb/__init__.py",
+      "bytes": 33,
+      "sha256": "6d3231c01203710706caefca476ed0c116c6f6e77f9b21014065e22b816ed424"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/fmb/fmb.py",
+      "bytes": 7434,
+      "sha256": "ffe41bf3b62aa265b4b14e6d9ea6b1e2b8843c2634c88e3c73ce295697192535"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/humanoid/__init__.py",
+      "bytes": 123,
+      "sha256": "b14ec3b67635e6e64baed868185a3728e16f2128e4221a1bcc1c88eeccddbfd2"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/humanoid/humanoid_pick_place.py",
+      "bytes": 10692,
+      "sha256": "93c3b2041db09d7b851eb060a7e60c21be530ed04722064792299172432ff9ea"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/humanoid/humanoid_stand.py",
+      "bytes": 4808,
+      "sha256": "6b3a533dccc7222c840981faef6ab3a7646d700142b2e523c45da8e6031b2b65"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/humanoid/transport_box.py",
+      "bytes": 12260,
+      "sha256": "c3d138d61d61ee02cac7d3c4d1aeafb57912a3ff468189ebd3784285da450f6c"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/mobile_manipulation/__init__.py",
+      "bytes": 98,
+      "sha256": "1906a3200fadfe9ffd1eb8648f9f8c10499b19f6889026206837a95547612764"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/mobile_manipulation/open_cabinet_drawer.py",
+      "bytes": 15918,
+      "sha256": "89a42e43369b003ed7b2158c560ad898b4f2b69eb5db3ae9785d7109708e27f0"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/mobile_manipulation/robocasa/__init__.py",
+      "bytes": 40,
+      "sha256": "9a3a4adc534ce469d1e026967c3d62da0564e6d53837ab539039b6a42aac7e8a"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/mobile_manipulation/robocasa/kitchen.py",
+      "bytes": 25625,
+      "sha256": "7d72e84c80e093ed1e11a1fb4eb08e0d859f54e56418fe9c4738a7c9f2849167"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/quadruped/__init__.py",
+      "bytes": 92,
+      "sha256": "fc01d2dc7f428f65d3efefb98f05b534c99559b6714697460cd5ee753e8ead93"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/quadruped/quadruped_reach.py",
+      "bytes": 7365,
+      "sha256": "68fe6b17e3a459a5f16f94988aeaebabc70cfbce6d542ae5ba230a3174e89d99"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/quadruped/quadruped_spin.py",
+      "bytes": 5205,
+      "sha256": "17d1e626d65e2cda6e160dfe5723bb41dcfc741b099827e21f4d3bea7a6ae22b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/__init__.py",
+      "bytes": 748,
+      "sha256": "d346fdad684a481a09a9b49eda189a8499984bedea6e1d5080f164b353082554"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/assembling_kits.py",
+      "bytes": 11944,
+      "sha256": "8088de41af8baf5e38912076460886f66dada67e097891da2f35806e66b2f93d"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/lift_peg_upright.py",
+      "bytes": 5868,
+      "sha256": "5523403406fd9fdc5672f73bb095959b22ff9b91bfcfb5186b5afbfd53f8840d"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/peg_insertion_side.py",
+      "bytes": 14044,
+      "sha256": "67f1b3805cf3f413459fd8d147b2aaf362e65f223c3436928ef569309c908295"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/pick_clutter_ycb.py",
+      "bytes": 7345,
+      "sha256": "b80fa430630038378dbcbf7d2b590306bb54edbed51246e4cd48a9e5d273b9c3"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/pick_cube.py",
+      "bytes": 6006,
+      "sha256": "a935b95d59c4fb34d1cf9ccb00011e733440cabd1c48af1a0a7a781f3911038c"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/pick_single_ycb.py",
+      "bytes": 10290,
+      "sha256": "bdc7aae34a673de50f99407aab5cbbf9960d02b5dd3372f4be30df489943cc95"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/place_sphere.py",
+      "bytes": 10101,
+      "sha256": "27745e0452bb4f265096578816ca73ecf975c2a033698a2f78665f34d2f90d53"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/plug_charger.py",
+      "bytes": 10582,
+      "sha256": "52022080f7c60c4c8dfbd3fefff87dba0d16c66649ed0b88a6547a7c01a4beb0"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/poke_cube.py",
+      "bytes": 9354,
+      "sha256": "baeb2623205fa88a014a9fa1a0142357344d7e8fac6a148d4fe866bda0e8c611"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/pull_cube.py",
+      "bytes": 5556,
+      "sha256": "8e7f1cebe4bd06b83012d118896f87b5ae57d20f00da61d4e504784d19e646ae"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/pull_cube_tool.py",
+      "bytes": 9962,
+      "sha256": "ab260d6c74ea4a2f85afaf1b0ff67c14fef2e22cfed5459601ef3a5e0f6176c6"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/push_cube.py",
+      "bytes": 11967,
+      "sha256": "65da1a47a9cc7add3ab806166961b6bb566ef571857ccfe2e23eda2a1dc8ae76"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/push_t.py",
+      "bytes": 23533,
+      "sha256": "fb2d06aa6f820af03f30821e4c6eea54081a3b0e4e1d829b88269b93cb6f3d36"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/roll_ball.py",
+      "bytes": 6771,
+      "sha256": "47a0c297d9fc171e6ce32f5e2c4e0346a29a9d233326a5c57163bfdfcf064061"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/stack_cube.py",
+      "bytes": 7459,
+      "sha256": "ff76ae608f79ba3ea13334e61ccb72f291660f9461895c70e3c30f8390694440"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/turn_faucet.py",
+      "bytes": 9212,
+      "sha256": "2d302abd886a088f961e3780b7b53a86eb3f0efb7f638bdadd687c6a8ffc7f1d"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/two_robot_pick_cube.py",
+      "bytes": 10101,
+      "sha256": "a2cb80e811677b6524808a7cb30ec9321ffcdf2fd16b2ededf488d3490c789bd"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/tasks/tabletop/two_robot_stack_cube.py",
+      "bytes": 11973,
+      "sha256": "95791d4b8cd113d280e23cebf6637f4f2b6adb8a60e560f662561cb2f0e5af82"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/utils/README.md",
+      "bytes": 209,
+      "sha256": "a4b176c709c57ec3c49cdfd09b254c13f255bcf016161aa3cbed00501fae9647"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/utils/observations/__init__.py",
+      "bytes": 2013,
+      "sha256": "4c86d5723a9528d43e954fbb47db187f31294e3e24f495bf36c78b5b4a4d5c59"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/utils/observations/observations.py",
+      "bytes": 2606,
+      "sha256": "8d560a5db21bc73e91e42a6450d57460fbb6a912e715bd023806ee732e36d402"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/utils/randomization/__init__.py",
+      "bytes": 66,
+      "sha256": "37065b013ab94d5bbbaf03b3ca981ee10ee9f5b4b6950d0e600572781634f159"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/utils/randomization/batched_rng.py",
+      "bytes": 2165,
+      "sha256": "f2e12db177372a79c40a7db7311b0d4be0a2ce82bf6bb74456a011854e87854b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/utils/randomization/common.py",
+      "bytes": 534,
+      "sha256": "05ee2540bbf93514c7106256849d1f0930c779545f7e07cef3f4c437b73afe7c"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/utils/randomization/pose.py",
+      "bytes": 1039,
+      "sha256": "f4f3e0f90328ac755eddf5787b74fe05162ed04ffc22d718f6b1d657f8e8ea2d"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/utils/randomization/samplers.py",
+      "bytes": 3665,
+      "sha256": "10e905d7c9a60c2edf0368608fc402d808348277f81fee0c2233820ef4cca421"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/utils/rewards/__init__.py",
+      "bytes": 22,
+      "sha256": "eba315e5809b9e917869cfd2bd3549d34d11c4cd4022c7255fb39ab6203e59a9"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/envs/utils/rewards/common.py",
+      "bytes": 3647,
+      "sha256": "d657c93561b7c7b5236ab1cbb5e2d76bc0c2cdb7bf2fb9d804c381a390fd0914"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/evaluation/__init__.py",
+      "bytes": 33,
+      "sha256": "3c230de9d73dce014ab974cf9a401411a84fdd71bae5c2912c6317ae4e487976"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/evaluation/evaluator.py",
+      "bytes": 4493,
+      "sha256": "d4437aa80886c77b5a078bc2780ad4a77dd46632ef06dd4a7ba8945bc67c695d"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/evaluation/run_evaluation.py",
+      "bytes": 4780,
+      "sha256": "ca8ae986b9492841b27077d04bc7aaba724746cca30eebfbed918da60f70bc2b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/evaluation/solution.py",
+      "bytes": 1269,
+      "sha256": "7bf01ad1fe2c490e7a2972fbb550cf50a7fb5938dcb857395f827bea9f3ce19b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/render/__init__.py",
+      "bytes": 118,
+      "sha256": "532ea1d5bcda9a650ef1054f5420dcb82ba19ee3777b9be8b5a868e3976b006c"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/render/shaders.py",
+      "bytes": 7103,
+      "sha256": "83655c0128b2acfee7543bff325998f427986cdafb403bd405d0a3b83323a90d"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/render/version.py",
+      "bytes": 254,
+      "sha256": "130d934c2ac8eb4b0bfdc8c4a6bea2b8f1ca28c81332d1685915bf31ebc127fe"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/sensors/__init__.py",
+      "bytes": 95,
+      "sha256": "4d6db09211cddbc747397ba3c620ced88965fc4849744d1ed8c11b819c3b258d"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/sensors/base_sensor.py",
+      "bytes": 1665,
+      "sha256": "a2afeffdd3c0e950baf44abe243a354deabaf763fa29947fa2653dad0eb72ff9"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/sensors/camera.py",
+      "bytes": 11459,
+      "sha256": "cc8946310612d0da106d3192c2acbae6d94d0f8c8d2cf629b4221e0f09f06da9"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/sensors/depth_camera.py",
+      "bytes": 5068,
+      "sha256": "2824fb0cca9069c55a83fdb832390a02697ced3e85b43a8d4b44c915f31ce530"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/trajectory/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/trajectory/dataset.py",
+      "bytes": 6351,
+      "sha256": "9eb1b78e485dcd1a80763c42fdcf19e05c6992f5b703d5cfbd4a7df94c7fbb7f"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/trajectory/merge_trajectory.py",
+      "bytes": 3685,
+      "sha256": "cec8d1313b22222ad91885782abb5838cdbece8380cddece6d911d58627365b1"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/trajectory/replay_trajectory.py",
+      "bytes": 14080,
+      "sha256": "201d1dd19ddabc1683857f2d2b25ee696437a43881d2540ba41d4570babd7189"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/trajectory/utils/__init__.py",
+      "bytes": 753,
+      "sha256": "b30ece1e32826aee0153aa6de4e0a8b09aa91c34d0d2ab6c62ef71dcfe54ec90"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/trajectory/utils/actions/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/trajectory/utils/actions/conversion.py",
+      "bytes": 11355,
+      "sha256": "447eed07d763df1e3052eeb6679a3408af9149f5a3b774570e909a3803e840e4"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/README.md",
+      "bytes": 1519,
+      "sha256": "036506d6ee7ee0b2e2f8591ce2509c1018d21f0c58d31b2dd97b6fcb0e2afb47"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/common.py",
+      "bytes": 12540,
+      "sha256": "1f6eb521e0235645875c5bdda740fe41df2e271e2cac87fd49c5d4d987e961e4"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/download_asset.py",
+      "bytes": 7952,
+      "sha256": "40527c46e5e5c330b3c344b575cc5fadb0356a89b1bc2a27a04b84f18884e148"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/download_demo.py",
+      "bytes": 4393,
+      "sha256": "378e17ebe3aad28b2aeb8c0bf89d18d4e26169a79f5bf415e0b51a315b94f760"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/gym_utils.py",
+      "bytes": 5922,
+      "sha256": "ac060dcb126d1756d28218bf1033e5aa09d8650c06d11925a1b81a3f3b5212fc"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/io_utils.py",
+      "bytes": 1615,
+      "sha256": "549f77aa81f1cc5588963029f74e37a49a844e61069b1cedfc3a18b44e4777f2"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/logging_utils.py",
+      "bytes": 1765,
+      "sha256": "2289a7c3656b279e80ea4bf2226f59860a7de107fe58e7fd5ae30018d07ed9f7"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/precompile_mpm.py",
+      "bytes": 291,
+      "sha256": "0f8f7b9bfd2670d89f781115ef0986e601d4fd2b2d3693a81c86fe3908aabd40"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/registration.py",
+      "bytes": 9718,
+      "sha256": "bbc7ed7c6bd03f8ab394a36a2d08c68b771117ffa1e91cfedbcc5b2e45bf609e"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/sapien_utils.py",
+      "bytes": 16312,
+      "sha256": "466cce0db68a01493454163c83740578aa197c1b1521367798ce4d5ea0cbf405"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/assets/README.md",
+      "bytes": 70,
+      "sha256": "e64926b08895eb8c921063b7e076809698d74f2ac6b352935795a7a1f2b8e86d"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/assets/__init__.py",
+      "bytes": 159,
+      "sha256": "81054ac007337089935c0ad296d0562a549452e82e3b5dac6583b7261e4a2eca"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/assets/data.py",
+      "bytes": 8696,
+      "sha256": "f75271cd13d508ecc9579a1a09fce9902c862f758eee547f5a6d2e0551c2bfac"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/building/__init__.py",
+      "bytes": 218,
+      "sha256": "aae088e5660687318b31583f343c98bf61bf33145304bf11e970f86ba898f2a7"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/building/_mjcf_loader.py",
+      "bytes": 37011,
+      "sha256": "4aacd2a11a28b45bc8b47af3c2b0ee48749c78fc5b68fa966fbdbad8cec7cc85"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/building/actor_builder.py",
+      "bytes": 14996,
+      "sha256": "baa71e87e9724066ed62c6dcf39dedd82fedc527b3a491e0902d7d89afade493"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/building/articulation_builder.py",
+      "bytes": 8484,
+      "sha256": "0107ed0ec4373011cc8c794a999cf7ba83d31a9fde465be7e5618ae8bb1085ec"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/building/ground.py",
+      "bytes": 3849,
+      "sha256": "b553289f7d2b9ce16a4feb8869c6766ce17583189150884ac78803654d2ca6d8"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/building/mjcf_loader.py",
+      "bytes": 4452,
+      "sha256": "158fbef33e095a30c708ce9760b482f16d78307572c15d12cce4e21f359a7dbb"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/building/urdf_loader.py",
+      "bytes": 4905,
+      "sha256": "9656288910d4e604e2eec822f05bfe663c1da3b4a82e99ad1b8809244a67f398"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/building/actors/__init__.py",
+      "bytes": 1420,
+      "sha256": "1bb6850246f67fb73a8547258c9d7b188be5cd4cd596920e83a0199135856c38"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/building/actors/common.py",
+      "bytes": 9290,
+      "sha256": "1364fa7d4c4087922ddf07a591390c43fa6d903abc761d3afa49490ad6a02bcd"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/building/actors/ycb.py",
+      "bytes": 1343,
+      "sha256": "ecb8378eb3b0dd08f36a51fd12365a3deb057f56b36938d77c57e1dd12351b52"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/building/articulations/__init__.py",
+      "bytes": 1147,
+      "sha256": "8c2f2b6ce1732e73240b43be25ed910cc4250ddbb732ec3c3fd81b9d380b1d4e"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/building/articulations/partnet_mobility.py",
+      "bytes": 2558,
+      "sha256": "e6b47f9ff8515a7350f9aa5c892dcc0dd45b5566e6cf80f31e182d50565c5e68"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/building/articulations/robel.py",
+      "bytes": 3436,
+      "sha256": "f64ad9f92436c192a28ef1439a048e75eed930ad840b1f33c50f5582d519b3cd"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/geometry/__init__.py",
+      "bytes": 24,
+      "sha256": "d31731f80a9a464b3f6b60fe92544f7ef57d0a34ab8bfb88d59aaf6d37372a0a"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/geometry/bounding_cylinder.py",
+      "bytes": 4761,
+      "sha256": "5cedaf3553e5fc949c7aaa4c3e3d211f92f54a555015464542b443cbdacc3a42"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/geometry/geometry.py",
+      "bytes": 6419,
+      "sha256": "ea1bf134354b341579c81cc7c5a9bb863108d8f546be9ebb805afeed03782573"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/geometry/rotation_conversions.py",
+      "bytes": 20563,
+      "sha256": "53bcfb8ed117de6d522044712b64735ee5cbf405a564e5f6c098a9903223c049"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/geometry/trimesh_utils.py",
+      "bytes": 4177,
+      "sha256": "4f4e8753b64e83e621bb5cd1c475db71ca4d1cd5b5def9fde2e9f3a5d503dc8d"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/__init__.py",
+      "bytes": 40,
+      "sha256": "f632575d0601b983da6d9fc64c8b240f8d7f257df7479653f2389a40e1047f47"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/registration.py",
+      "bytes": 1508,
+      "sha256": "8f3d023836349b21f4b753c72b052eb86a1e77d76782ad25ffc40f72ce4ca754"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/scene_builder.py",
+      "bytes": 4108,
+      "sha256": "c201710ef4b8c3fedce14e338cf435119891dc94666d8d02153849cac644c780"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/ai2thor/__init__.py",
+      "bytes": 131,
+      "sha256": "9321e5e909540cabc5247cee3e36159c03152ad32ad1f20258bb0b7011f2fafd"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/ai2thor/constants.py",
+      "bytes": 4027,
+      "sha256": "622bfb6b07bb3127340a9b07e541b6ad8692ba8df4c3834ab5c558b7ba18e0a6"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/ai2thor/scene_builder.py",
+      "bytes": 11482,
+      "sha256": "a474b82abe259451e0e32503e72a99b2a20359a7195c44ed0203fd36e6d37a12"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/ai2thor/variants.py",
+      "bytes": 517,
+      "sha256": "f3a0ce26ff386d3c4b481a4cd1dcea9f8f4cb9ca77530a0d6787030ec3a5236e"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/ai2thor/metadata/ArchitecTHOR.json",
+      "bytes": 519,
+      "sha256": "99b3c958774ac46c3d629a6984066d096b293271a1f71de9f1e2084bc7b698d3"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/ai2thor/metadata/ProcTHOR.json",
+      "bytes": 605697,
+      "sha256": "3989c22ab95875b0a16c5d9c49f354788d061f6cfe5fa66442da2c91101aaad4"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/ai2thor/metadata/RoboTHOR.json",
+      "bytes": 3612,
+      "sha256": "bfdd8da5b04604c8acbeed5d037f36bcc2fe381a76b294e3f7863bd507df81b4"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/ai2thor/metadata/iTHOR.json",
+      "bytes": 7488,
+      "sha256": "c00be810cfc90b612969e80cb3986ff616d143e1b8082efcfe5a1e121e234197"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/control/planar/scene_builder.py",
+      "bytes": 1075,
+      "sha256": "f731ba48bc7b6b249872bbbbde5a4af98f17e48bc589662257833d4521483d26"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/kitchen_counter/__init__.py",
+      "bytes": 54,
+      "sha256": "4c530a694c8fa9194827259fbecfcf3901dd8aa5b074cf8efacb198e4c611c10"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/kitchen_counter/scene_builder.py",
+      "bytes": 1464,
+      "sha256": "6db2397386b1f58b452d44cc0fce87027a9d9bda1250de3d6fee4544ec7e34fd"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/replicacad/__init__.py",
+      "bytes": 50,
+      "sha256": "b07f734dd71271d79f8f48a9d4f45243ce27836c77e6a650439f2aceaf80a04c"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/replicacad/scene_builder.py",
+      "bytes": 16353,
+      "sha256": "821edcab422e5cb80313bb202bf49d62ea8524000b82febe80088149f4674979"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/replicacad/metadata/scene_configs.json",
+      "bytes": 4025,
+      "sha256": "0c89998a5fc0eda41610c1cb4f0224b583efa3d4f1efdec60d67a9750458c75b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/replicacad/rearrange/__init__.py",
+      "bytes": 284,
+      "sha256": "eb0ac0bcd867a645ce4980027734dee05bde1837f270220d1076d351b1d1b331"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/replicacad/rearrange/scene_builder.py",
+      "bytes": 17321,
+      "sha256": "e6d9477ecbc8e46c8d88495a19f4b86b33bcb430cb88993fc9c16ed44e06e5a6"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/replicacad/rearrange/variants.py",
+      "bytes": 1170,
+      "sha256": "c796e7fda13eb91788fd94475334013250f384a5924b5c36b52887a2c17c040c"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/scene_builder.py",
+      "bytes": 40749,
+      "sha256": "d437387d9e65e1628d01cfaa62c7c39ce182d6a5b70b61e327a99308762a3bda"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/accessories.py",
+      "bytes": 7857,
+      "sha256": "4a31bfafb72800a449ed6b6d50ff9b7d2c2ecf8b19517fb8cfc0f6f3185d6101"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/cabinet.py",
+      "bytes": 46314,
+      "sha256": "4f01badb94634da33f0ea4f1c63caf6313e73e7a09b14713a55f3312d26fc3c0"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/cabinet_panels.py",
+      "bytes": 20933,
+      "sha256": "13d47f02b67770e3701295a785a0e30d90f0a26b33dc532e5df39ac7948d2acf"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/counter.py",
+      "bytes": 27689,
+      "sha256": "a02b00e980dff7225f67d359981aca992290419a97b0a1a67a0c4cfc2575c0a2"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/dishwasher.py",
+      "bytes": 520,
+      "sha256": "d15427e27d52f80138880e067ebd14004b98ba2da1658034fc0be2900d326d94"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/fixture.py",
+      "bytes": 11334,
+      "sha256": "6e39c41515ebbe913c0b32821356b9fd5f2320581d1322d53fb56afd74dc5149"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/fixture_stack.py",
+      "bytes": 8523,
+      "sha256": "910d9c79247f34ed5fb318417d9274b0e0c35ba68d0ecc841c6df025e5c91225"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/fixture_utils.py",
+      "bytes": 4760,
+      "sha256": "e9c3c35e76c318884e5b05f1be5568885625882746adbd18aadd8162f472ce34"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/fridge.py",
+      "bytes": 478,
+      "sha256": "ead254c344d0fac82359a58431e535aeffe4b4ef2d20a75cb825df2e804eb43f"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/handles.py",
+      "bytes": 12411,
+      "sha256": "b4036bd7858025bb90a8581f4cbb260267095de97d1a56734efc183979a006ec"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/hood.py",
+      "bytes": 431,
+      "sha256": "660e9d5a4e81aea27d1cd5e3fa3a97a09f8bd11e16169bfb4daa91a756b76c18"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/microwave.py",
+      "bytes": 4497,
+      "sha256": "27072d0da48e194778e03765d850d29f0e332450b2683f99ce5d54eb6085d9a6"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/mujoco_object.py",
+      "bytes": 9844,
+      "sha256": "a31277cab302701e878c9bfb7ff657bd19e6e9a017b2ad9662cdfebeb2e83a55"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/others.py",
+      "bytes": 9382,
+      "sha256": "3cfd7fafaeae72464ad6fa2af7226054d83267d67cef819e5915cf5de7572ba4"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/sink.py",
+      "bytes": 4274,
+      "sha256": "f9c8b45d369d9b26768885aae1c924ec9fff6317ab49c4afbd1abe6e9498e6d3"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/stove.py",
+      "bytes": 6871,
+      "sha256": "690ecfa59dd15584e98f43b1780ea14c5126f2e63e569f403d01c71316664b87"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/fixtures/windows.py",
+      "bytes": 12953,
+      "sha256": "5a255a16367a2538dbe99cb604ca5f7ec4570b65843e43338423525d8e458d6f"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/objects/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/objects/kitchen_object_utils.py",
+      "bytes": 14459,
+      "sha256": "63ef528e8a027ebefa46dfd3e94d7ee7ba420d083e69a3c8d23349e6b2c7228f"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/objects/kitchen_objects.py",
+      "bytes": 48332,
+      "sha256": "aa388e3791845cddd20ad80ddaf64a98e7b96efdc7f8232722b3c3f76e918780"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/objects/objects.py",
+      "bytes": 3581,
+      "sha256": "cd585cbee3929a6edb60c3b15203dd084af05c56918d71c9082d68840d8be2d7"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/utils/mjcf_utils.py",
+      "bytes": 2808,
+      "sha256": "8bd81835070571038937ded32e7973bd40954b72747f9ebf72d35325948c6262"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/utils/object_utils.py",
+      "bytes": 5513,
+      "sha256": "1ddb6dedca705b5741eaa68a5bf805de2f4ba78d290a27e75415579b47010aef"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/utils/placement_samplers.py",
+      "bytes": 24741,
+      "sha256": "6546ee79b05e64f0431edfd9b56db96cf9b6c6a73e9b601108ef9d4f712852b1"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/utils/scene_registry.py",
+      "bytes": 3770,
+      "sha256": "d7a647848d668031b2df7ef768c55196237ca5cbeb56280d248304c724f11357"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/robocasa/utils/scene_utils.py",
+      "bytes": 6293,
+      "sha256": "6bc1e7a11b5bc26a90caf2d00875172a3f79d46dbfc25ce8756fde0ff081bec7"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/table/__init__.py",
+      "bytes": 45,
+      "sha256": "839aa6ae1e3067b57f3ee2aff9953d455c0d4146d0842b2100522703244bb997"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/scene_builder/table/scene_builder.py",
+      "bytes": 9668,
+      "sha256": "63e8fe4b8836ad7c7433b08adc3bfec5595ea917a24b773b2dfb593d234a6f40"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/structs/README.md",
+      "bytes": 286,
+      "sha256": "aa760a8a6a7f66480d71db9446b610c554e298d9aafeeb0330aa10f15b4c742b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/structs/__init__.py",
+      "bytes": 524,
+      "sha256": "048b51dd77b4cfac42acc1c011a1f4000015c9ea27b10deaf83254c915226c00"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/structs/actor.py",
+      "bytes": 16752,
+      "sha256": "b463e3d0776e5b953f2de8b76eeb31e8a5fe7cf018fead9743ef83a7c6400599"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/structs/articulation.py",
+      "bytes": 30559,
+      "sha256": "a5d43d7dd92d186c1ef3b0b58e05df9020fc09ddd2e7326acefc067a89a0516c"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/structs/articulation_joint.py",
+      "bytes": 11728,
+      "sha256": "91cddc224394168378d90e2cea2205d56cb0f6ba9afdc4e03fdb8d800c76146a"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/structs/base.py",
+      "bytes": 19379,
+      "sha256": "9f151c4cfaf5ae9f197da66f14f22107fa9867d0d757ee963df377808f5e8948"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/structs/decorators.py",
+      "bytes": 535,
+      "sha256": "2efeb043df3d74e9eb7a8dad07eaa8a439e4781a7f8ec9f5a667d447e398f154"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/structs/drive.py",
+      "bytes": 7505,
+      "sha256": "50f4039066d74be08c46c67530709bf6cd6f7c0a399eab32c05f37c0a055cd26"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/structs/link.py",
+      "bytes": 12945,
+      "sha256": "24aaff0855328dcbd92fab9ad5675b7b63bd1a21048d3a2e257c68e3c390f2fe"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/structs/pose.py",
+      "bytes": 11938,
+      "sha256": "efa4a3aecfb2ddff18867baa31936287e3717278677e89886e7356d525aa2ba0"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/structs/render_camera.py",
+      "bytes": 12246,
+      "sha256": "e2984bdf9a7a47050c18e9ffc3c75fb6500311a370ed3ef45d94079610df4a7b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/structs/types.py",
+      "bytes": 3810,
+      "sha256": "7837b3412c6dbbc2328c87b893a9bc6a6427ede608b8ff622dab576ebec5607f"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/visualization/__init__.py",
+      "bytes": 163,
+      "sha256": "d1017ded447c77ba68307a3a9b9d83b0051702651bdd20ebd41db56f1df71045"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/visualization/jupyter_utils.py",
+      "bytes": 1322,
+      "sha256": "7575d4433fab153395fd7ab9c80e9813a71783b0cfc35e584adc37ecd801e507"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/visualization/misc.py",
+      "bytes": 5041,
+      "sha256": "2ab0c279fec5e4698639d881438a855279944defbbfa7341cf60d5046143f185"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/visualization/renderer.py",
+      "bytes": 1245,
+      "sha256": "f99d7cf9f5dee4d2c1601617141f66d840ca7613a401d0d5592b3dbe3c460924"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/wrappers/__init__.py",
+      "bytes": 229,
+      "sha256": "7fa1c31c7a0cf20c8d817e51c13af6bb7a06940787a9ac11bd53508965c425f2"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/wrappers/flatten.py",
+      "bytes": 3975,
+      "sha256": "307b08c0ebf32cc1f68475aa8c64ac86f351fd4b3459788d7c9129ae0d95511e"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/wrappers/frame_stack.py",
+      "bytes": 4987,
+      "sha256": "de499aec3b83ddad934137c80cebf04772062154f465eaf36f5c595e550068da"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/wrappers/gymnasium.py",
+      "bytes": 4174,
+      "sha256": "a74925dbd92479d0f66ab22f1ac90294a8580c1007f7b9993b8ad37a9cfada34"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/wrappers/record.py",
+      "bytes": 37305,
+      "sha256": "22ba7235245f9eafa61348582d39b4fb0d413da3c8874921fe9be4b6c9aa1c6b"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/utils/wrappers/visual_encoders.py",
+      "bytes": 2205,
+      "sha256": "2122cee5c79a46420d86f71ef7656e64c0cc094dc8e05edc416156d9a54ffb5e"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/vector/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/vector/wrappers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/vector/wrappers/gymnasium.py",
+      "bytes": 7285,
+      "sha256": "88b8be602c7841bcc1857b33b2042cb6cb37997581583e023279387dc19f6428"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/vector/wrappers/sb3.py",
+      "bytes": 4722,
+      "sha256": "4a55dd8843ea70d1d8321242cc0dbd90153accaec32937b59dcd0be99dd042d6"
+    },
+    {
+      "path": "ManiSkill3/mani_skill/viewer/__init__.py",
+      "bytes": 1609,
+      "sha256": "d25f667c0fbae562da8808386dc26acf07ca1f91289b952d93153af0dc91d897"
+    },
+    {
+      "path": "configs/model_settings.json",
+      "bytes": 2284,
+      "sha256": "f68c0ae90150e6c30b22c5f341c06700d13b877428a11c2d5240128888058ead"
+    },
+    {
+      "path": "configs/scene_catalog.json",
+      "bytes": 37200,
+      "sha256": "7c7c5feb2496ef894edea1a5f6d0401fc237c0f9174d2f7feed0d6688189167c"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 2198,
+      "sha256": "08d95252f9c710b714ca5daf9ec1bf3cec069934fe6d3cd67973a9e43ddc2a86"
+    },
+    {
+      "path": "docs/publishing.md",
+      "bytes": 2284,
+      "sha256": "7089dac085e9217f0e03253e0c34eb177edc96b8130200bc9d600e678ca8a551"
+    },
+    {
+      "path": "docs/release_changes.md",
+      "bytes": 2077,
+      "sha256": "73258d6970eb836fd8114872ce7e89d209805a74eb2fb4b6fbed7dd19fd14049"
+    },
+    {
+      "path": "docs/task_prompt.txt",
+      "bytes": 1374,
+      "sha256": "33dfcd336da02a9f431e5b1ab9fee9119219f265004c77102e72eccc4f5a0ce1"
+    },
+    {
+      "path": "docs/tool_definitions.json",
+      "bytes": 6192,
+      "sha256": "6a9366a88201513ff75d40e141768b0451458980d5ad1bcbdef2fb8f39f4fa99"
+    },
+    {
+      "path": "docs/images/performance_cost_pareto.png",
+      "bytes": 277226,
+      "sha256": "c67d2a13ffb50e42eece4c16e399371026289714261eacc8e81ce6046237819e"
+    },
+    {
+      "path": "docs/images/qualitative_reconstruction_examples.png",
+      "bytes": 2356962,
+      "sha256": "b439d77f6d7386dc81ea55ee1851d64bf2acec54bf6e56315d5f7d9c083caae1"
+    },
+    {
+      "path": "docs/images/spatialscout_camera_overview_v3_white.png",
+      "bytes": 1849693,
+      "sha256": "8cd4ab5d262384fc2a31bf4fc6191403aebed28052d6df270a008b1ddfd9dcf3"
+    },
+    {
+      "path": "requirements/evaluation.txt",
+      "bytes": 28,
+      "sha256": "148525fe99afb6d30be848673da9b7e2d2908be186d4c0f8c6e667373b74decd"
+    },
+    {
+      "path": "requirements/frozen.txt",
+      "bytes": 1868,
+      "sha256": "6042a31e979652156c941e6de1d7e671bfcd9fa0a68bea0241b6bd0dff43ade1"
+    },
+    {
+      "path": "requirements/render-cpu.txt",
+      "bytes": 1518,
+      "sha256": "21cc5c88e603cbdaa4b92a94e8b111583793b34e8d58fc64e5d687d8dec988ee"
+    },
+    {
+      "path": "scripts/attach_data.py",
+      "bytes": 1686,
+      "sha256": "07a7bbeae58bd84b8bd010e18925fcbd4f69a836f1c06a962cc4a1a98192c27b"
+    },
+    {
+      "path": "scripts/docker_entrypoint.sh",
+      "bytes": 271,
+      "sha256": "53a06d4e642d0c09244e2d210daf74cce620fdf5b1da40fc82c1549244bf7e39"
+    },
+    {
+      "path": "scripts/run_evaluation.sh",
+      "bytes": 607,
+      "sha256": "6957982f90303fab346dfe113b829cdafc33dcee1e33eed767095d0f03199d32"
+    },
+    {
+      "path": "scripts/upload_github.py",
+      "bytes": 5628,
+      "sha256": "8d449c9e2c2d9e4bf28bd8f4aa9caa4d2144956fbc5c607dab2b1ce582a70f5d"
+    },
+    {
+      "path": "scripts/upload_huggingface.py",
+      "bytes": 3083,
+      "sha256": "be69561a8c152be66251217046471b0c876b5bd017325ae91bde730c207fd873"
+    },
+    {
+      "path": "spatialscout/__init__.py",
+      "bytes": 39,
+      "sha256": "e628b4f77c239a79d54f3043b241450fd725b008cb8f1cf294cc1b929e1e6b4a"
+    },
+    {
+      "path": "spatialscout/paths.py",
+      "bytes": 201,
+      "sha256": "713e156419d70c3b10b85317706abf9113aa47044b5478381a66ec4bd9f64062"
+    },
+    {
+      "path": "spatialscout/agent/__init__.py",
+      "bytes": 26,
+      "sha256": "ea526b065b849ae594282a771171b9a33e0ff051f7a8f5d3f21d4a8d34be5d17"
+    },
+    {
+      "path": "spatialscout/agent/harness.py",
+      "bytes": 28363,
+      "sha256": "94c182a2871aa209f1f0087bcd8f2b2af16122a6e1f133ebfb8f45fbc60b7571"
+    },
+    {
+      "path": "spatialscout/agent/token_usage.py",
+      "bytes": 5007,
+      "sha256": "09594d0ff0fb19a0c22a629bd179bc29a71b89a7305b8fb18b09807e3402cc81"
+    },
+    {
+      "path": "spatialscout/benchmark/__init__.py",
+      "bytes": 30,
+      "sha256": "8504210d0c1b8317085329fb1fb6567a2beb13aff70146ff77353ad43543a994"
+    },
+    {
+      "path": "spatialscout/benchmark/batch.py",
+      "bytes": 10193,
+      "sha256": "7045d753270310b12d9cf300463d09550f27d9f18a08c14605d4cdb0ac300c79"
+    },
+    {
+      "path": "spatialscout/benchmark/room.py",
+      "bytes": 55946,
+      "sha256": "df4c346b7636980339278a479aa0a16aada535ca456cc3aa650a36b2dab6fd6a"
+    },
+    {
+      "path": "spatialscout/data/__init__.py",
+      "bytes": 25,
+      "sha256": "3fda5c8bbe0bf2aa5b14277bdf189ea33396fe548c301e6613784a86e8c1027f"
+    },
+    {
+      "path": "spatialscout/data/download.py",
+      "bytes": 7364,
+      "sha256": "4c81709d093e21e1f104ea2f88dfa51a9c93f6747c03c07119364fae07b8f81f"
+    },
+    {
+      "path": "spatialscout/data/index.py",
+      "bytes": 3359,
+      "sha256": "3d367beaed7ead1ddcb923a9621bfebc2dc8146cef81057146f1c6010ec8be4d"
+    },
+    {
+      "path": "spatialscout/data/prepare.py",
+      "bytes": 3190,
+      "sha256": "4b2b934a3c16e049ce12ef0086a2ede04b9b9d448a52fbca365cb4dd629c4957"
+    },
+    {
+      "path": "spatialscout/data/select_camera.py",
+      "bytes": 3939,
+      "sha256": "788f42bbca9cfb908902ed3e78c0ea6bdf5a1a954dba297a20bf14668a84cef1"
+    },
+    {
+      "path": "spatialscout/evaluation/__init__.py",
+      "bytes": 31,
+      "sha256": "996e4362ff205c6a5c42fee2f19575f2d12ff083e2347297b39591ab56a90b1e"
+    },
+    {
+      "path": "spatialscout/evaluation/iou.py",
+      "bytes": 5755,
+      "sha256": "7712d5db7fafb7f07fba6f8374793c9c594dbce22ceb66b82c900e20d9ee8f1e"
+    },
+    {
+      "path": "spatialscout/evaluation/score.py",
+      "bytes": 3718,
+      "sha256": "ae26f895df793f2f7ee6be96d2a3ad03eb49dd9b2e3107949fe873c7a215a645"
+    },
+    {
+      "path": "spatialscout/tools/__init__.py",
+      "bytes": 26,
+      "sha256": "414f0fb12b2f2015a7242642ec6dd061e40e437fcbb975ebebe85859ab7b8301"
+    },
+    {
+      "path": "spatialscout/tools/capture.py",
+      "bytes": 2597,
+      "sha256": "c780b522950ebfb65afb71bce7aff0e4329aa88adfef845b8c1c2c5164f3361d"
+    },
+    {
+      "path": "spatialscout/tools/patch_sapien_cpu.py",
+      "bytes": 1140,
+      "sha256": "7324c402a5c9a9f75b1811209af40e5946a12f0dce003ccd08b0580ccb58af10"
+    }
+  ],
+  "file_count": 396,
+  "total_bytes": 7883828,
+  "excludes": "Git history, model-run outputs, credentials, virtual environments, scene resource binaries, project plotting and trajectory-analysis code. Three README illustrations are included.",
+  "package_layout": "spatialscout/{agent,benchmark,evaluation,data,tools}"
+}

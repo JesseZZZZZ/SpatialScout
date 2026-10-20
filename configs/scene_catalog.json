@@ -1,0 +1,1595 @@
+{
+  "description": "Ten original 30-object scenes, 50 additional scenes with 35 or 40 target objects, and 30 original ProcTHOR layouts with 40 targets each.",
+  "scenes": [
+    {
+      "name": "kitchen_01",
+      "type": "kitchen",
+      "builder": "iTHOR",
+      "scene_index": 68,
+      "source_scene": "FloorPlan1_physics",
+      "camera_start": [
+        0,
+        0,
+        1.6,
+        55,
+        -12
+      ]
+    },
+    {
+      "name": "kitchen_02",
+      "type": "kitchen",
+      "builder": "iTHOR",
+      "scene_index": 0,
+      "source_scene": "FloorPlan7_physics",
+      "camera_start": [
+        0,
+        0,
+        1.6,
+        55,
+        -12
+      ]
+    },
+    {
+      "name": "living_room_01",
+      "type": "living room",
+      "builder": "iTHOR",
+      "scene_index": 37,
+      "source_scene": "FloorPlan201_physics",
+      "camera_start": [
+        2,
+        -2,
+        1.5,
+        35,
+        -12
+      ]
+    },
+    {
+      "name": "living_room_02",
+      "type": "living room",
+      "builder": "iTHOR",
+      "scene_index": 10,
+      "source_scene": "FloorPlan227_physics",
+      "camera_start": [
+        3,
+        -2.5,
+        1.5,
+        30,
+        -12
+      ]
+    },
+    {
+      "name": "bedroom_01",
+      "type": "bedroom",
+      "builder": "iTHOR",
+      "scene_index": 26,
+      "source_scene": "FloorPlan301_physics",
+      "camera_start": [
+        -1.5,
+        0.9,
+        1.5,
+        0,
+        -12
+      ]
+    },
+    {
+      "name": "bedroom_02",
+      "type": "bedroom",
+      "builder": "iTHOR",
+      "scene_index": 23,
+      "source_scene": "FloorPlan320_physics",
+      "camera_start": [
+        -0.5,
+        0.1,
+        1.5,
+        45,
+        -12
+      ]
+    },
+    {
+      "name": "bathroom_01",
+      "type": "bathroom",
+      "builder": "iTHOR",
+      "scene_index": 126,
+      "source_scene": "FloorPlan401_physics",
+      "camera_start": [
+        2,
+        -1.5,
+        1.5,
+        35,
+        -12
+      ]
+    },
+    {
+      "name": "bathroom_02",
+      "type": "bathroom",
+      "builder": "iTHOR",
+      "scene_index": 2,
+      "source_scene": "FloorPlan421_physics",
+      "camera_start": [
+        0.3,
+        -2.2,
+        1.5,
+        -90,
+        -12
+      ]
+    },
+    {
+      "name": "apartment_01",
+      "type": "apartment",
+      "builder": "ArchitecTHOR",
+      "scene_index": 9,
+      "source_scene": "ArchitecTHOR-Test-00",
+      "camera_start": [
+        1,
+        1,
+        1.6,
+        45,
+        -12
+      ]
+    },
+    {
+      "name": "apartment_02",
+      "type": "apartment",
+      "builder": "ArchitecTHOR",
+      "scene_index": 6,
+      "source_scene": "ArchitecTHOR-Val-00",
+      "camera_start": [
+        1,
+        1,
+        1.6,
+        0,
+        -12
+      ]
+    },
+    {
+      "name": "ithor_kitchen_13",
+      "type": "kitchen",
+      "builder": "iTHOR",
+      "scene_index": 78,
+      "source_scene": "FloorPlan13_physics",
+      "source_object_count": 145,
+      "target_count": 40,
+      "camera_start": [
+        4.21,
+        -1.652,
+        1.45,
+        270,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_kitchen_30",
+      "type": "kitchen",
+      "builder": "iTHOR",
+      "scene_index": 34,
+      "source_scene": "FloorPlan30_physics",
+      "source_object_count": 101,
+      "target_count": 40,
+      "camera_start": [
+        -2.834,
+        0.069,
+        1.45,
+        0,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_kitchen_16",
+      "type": "kitchen",
+      "builder": "iTHOR",
+      "scene_index": 117,
+      "source_scene": "FloorPlan16_physics",
+      "source_object_count": 100,
+      "target_count": 40,
+      "camera_start": [
+        -2.621,
+        -2.058,
+        1.45,
+        45,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_kitchen_2",
+      "type": "kitchen",
+      "builder": "iTHOR",
+      "scene_index": 149,
+      "source_scene": "FloorPlan2_physics",
+      "source_object_count": 94,
+      "target_count": 40,
+      "camera_start": [
+        -1.5,
+        0.7,
+        1.45,
+        315,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_kitchen_28",
+      "type": "kitchen",
+      "builder": "iTHOR",
+      "scene_index": 22,
+      "source_scene": "FloorPlan28_physics",
+      "source_object_count": 91,
+      "target_count": 40,
+      "camera_start": [
+        0.462,
+        3.597,
+        1.45,
+        0,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_kitchen_9",
+      "type": "kitchen",
+      "builder": "iTHOR",
+      "scene_index": 140,
+      "source_scene": "FloorPlan9_physics",
+      "source_object_count": 89,
+      "target_count": 40,
+      "camera_start": [
+        -2.35,
+        -1.073,
+        1.45,
+        0,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_living_room_230",
+      "type": "living room",
+      "builder": "iTHOR",
+      "scene_index": 41,
+      "source_scene": "FloorPlan230_physics",
+      "source_object_count": 56,
+      "target_count": 40,
+      "camera_start": [
+        0.359,
+        -0.548,
+        1.45,
+        315,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_living_room_204",
+      "type": "living room",
+      "builder": "iTHOR",
+      "scene_index": 49,
+      "source_scene": "FloorPlan204_physics",
+      "source_object_count": 49,
+      "target_count": 40,
+      "camera_start": [
+        1.966,
+        -0.525,
+        1.45,
+        90,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_living_room_223",
+      "type": "living room",
+      "builder": "iTHOR",
+      "scene_index": 79,
+      "source_scene": "FloorPlan223_physics",
+      "source_object_count": 49,
+      "target_count": 40,
+      "camera_start": [
+        -1.005,
+        -1.324,
+        1.45,
+        135,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_living_room_215",
+      "type": "living room",
+      "builder": "iTHOR",
+      "scene_index": 132,
+      "source_scene": "FloorPlan215_physics",
+      "source_object_count": 49,
+      "target_count": 40,
+      "camera_start": [
+        4.932,
+        -0.383,
+        1.45,
+        225,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_living_room_224",
+      "type": "living room",
+      "builder": "iTHOR",
+      "scene_index": 72,
+      "source_scene": "FloorPlan224_physics",
+      "source_object_count": 48,
+      "target_count": 40,
+      "camera_start": [
+        0.743,
+        -0.696,
+        1.45,
+        135,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_living_room_203",
+      "type": "living room",
+      "builder": "iTHOR",
+      "scene_index": 4,
+      "source_scene": "FloorPlan203_physics",
+      "source_object_count": 45,
+      "target_count": 40,
+      "camera_start": [
+        3.425,
+        -0.113,
+        1.45,
+        0,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_bedroom_309",
+      "type": "bedroom",
+      "builder": "iTHOR",
+      "scene_index": 62,
+      "source_scene": "FloorPlan309_physics",
+      "source_object_count": 46,
+      "target_count": 35,
+      "camera_start": [
+        0.038,
+        0.41,
+        1.45,
+        315,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_bedroom_303",
+      "type": "bedroom",
+      "builder": "iTHOR",
+      "scene_index": 80,
+      "source_scene": "FloorPlan303_physics",
+      "source_object_count": 42,
+      "target_count": 35,
+      "camera_start": [
+        -1.719,
+        0.625,
+        1.45,
+        0,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_bedroom_326",
+      "type": "bedroom",
+      "builder": "iTHOR",
+      "scene_index": 110,
+      "source_scene": "FloorPlan326_physics",
+      "source_object_count": 42,
+      "target_count": 35,
+      "camera_start": [
+        2.325,
+        1.887,
+        1.45,
+        180,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_bedroom_311",
+      "type": "bedroom",
+      "builder": "iTHOR",
+      "scene_index": 122,
+      "source_scene": "FloorPlan311_physics",
+      "source_object_count": 38,
+      "target_count": 35,
+      "camera_start": [
+        -2.28,
+        1.304,
+        1.45,
+        315,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_bedroom_330",
+      "type": "bedroom",
+      "builder": "iTHOR",
+      "scene_index": 12,
+      "source_scene": "FloorPlan330_physics",
+      "source_object_count": 36,
+      "target_count": 35,
+      "camera_start": [
+        -0.965,
+        1.896,
+        1.45,
+        315,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_bedroom_307",
+      "type": "bedroom",
+      "builder": "iTHOR",
+      "scene_index": 31,
+      "source_scene": "FloorPlan307_physics",
+      "source_object_count": 36,
+      "target_count": 35,
+      "camera_start": [
+        1.651,
+        2.327,
+        1.45,
+        270,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_bathroom_423",
+      "type": "bathroom",
+      "builder": "iTHOR",
+      "scene_index": 128,
+      "source_scene": "FloorPlan423_physics",
+      "source_object_count": 40,
+      "target_count": 35,
+      "camera_start": [
+        3.293,
+        -2.223,
+        1.45,
+        135,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_bathroom_413",
+      "type": "bathroom",
+      "builder": "iTHOR",
+      "scene_index": 100,
+      "source_scene": "FloorPlan413_physics",
+      "source_object_count": 39,
+      "target_count": 35,
+      "camera_start": [
+        1.903,
+        -0.562,
+        1.45,
+        225,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_bathroom_430",
+      "type": "bathroom",
+      "builder": "iTHOR",
+      "scene_index": 74,
+      "source_scene": "FloorPlan430_physics",
+      "source_object_count": 38,
+      "target_count": 35,
+      "camera_start": [
+        2.82,
+        2.282,
+        1.45,
+        270,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_bathroom_403",
+      "type": "bathroom",
+      "builder": "iTHOR",
+      "scene_index": 15,
+      "source_scene": "FloorPlan403_physics",
+      "source_object_count": 37,
+      "target_count": 35,
+      "camera_start": [
+        0.448,
+        -3.144,
+        1.45,
+        0,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_bathroom_407",
+      "type": "bathroom",
+      "builder": "iTHOR",
+      "scene_index": 16,
+      "source_scene": "FloorPlan407_physics",
+      "source_object_count": 37,
+      "target_count": 35,
+      "camera_start": [
+        1.59,
+        1.327,
+        1.45,
+        180,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "ithor_bathroom_402",
+      "type": "bathroom",
+      "builder": "iTHOR",
+      "scene_index": 99,
+      "source_scene": "FloorPlan402_physics",
+      "source_object_count": 37,
+      "target_count": 35,
+      "camera_start": [
+        0.15,
+        -5.069,
+        1.45,
+        45,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "robothor_val1_5",
+      "type": "RoboTHOR furnished room",
+      "builder": "RoboTHOR",
+      "scene_index": 60,
+      "source_scene": "FloorPlan_Val1_5",
+      "source_object_count": 69,
+      "target_count": 40,
+      "camera_start": [
+        -3.355,
+        1.582,
+        1.45,
+        135,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "robothor_val1_1",
+      "type": "RoboTHOR furnished room",
+      "builder": "RoboTHOR",
+      "scene_index": 14,
+      "source_scene": "FloorPlan_Val1_1",
+      "source_object_count": 48,
+      "target_count": 40,
+      "camera_start": [
+        -8.073,
+        4.008,
+        1.45,
+        90,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "robothor_val2_5",
+      "type": "RoboTHOR furnished room",
+      "builder": "RoboTHOR",
+      "scene_index": 55,
+      "source_scene": "FloorPlan_Val2_5",
+      "source_object_count": 55,
+      "target_count": 40,
+      "camera_start": [
+        -8.839,
+        2.301,
+        1.45,
+        90,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "robothor_val2_4",
+      "type": "RoboTHOR furnished room",
+      "builder": "RoboTHOR",
+      "scene_index": 7,
+      "source_scene": "FloorPlan_Val2_4",
+      "source_object_count": 54,
+      "target_count": 40,
+      "camera_start": [
+        -4.89,
+        2.423,
+        1.45,
+        135,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "robothor_val3_5",
+      "type": "RoboTHOR furnished room",
+      "builder": "RoboTHOR",
+      "scene_index": 40,
+      "source_scene": "FloorPlan_Val3_5",
+      "source_object_count": 51,
+      "target_count": 40,
+      "camera_start": [
+        -3.618,
+        4.236,
+        1.45,
+        90,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "robothor_val3_3",
+      "type": "RoboTHOR furnished room",
+      "builder": "RoboTHOR",
+      "scene_index": 71,
+      "source_scene": "FloorPlan_Val3_3",
+      "source_object_count": 50,
+      "target_count": 40,
+      "camera_start": [
+        -5.455,
+        1.484,
+        1.45,
+        45,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "robothor_train1_4",
+      "type": "RoboTHOR furnished room",
+      "builder": "RoboTHOR",
+      "scene_index": 4,
+      "source_scene": "FloorPlan_Train1_4",
+      "source_object_count": 41,
+      "target_count": 40,
+      "camera_start": [
+        -6.418,
+        4.543,
+        1.45,
+        315,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "robothor_train2_4",
+      "type": "RoboTHOR furnished room",
+      "builder": "RoboTHOR",
+      "scene_index": 47,
+      "source_scene": "FloorPlan_Train2_4",
+      "source_object_count": 42,
+      "target_count": 40,
+      "camera_start": [
+        -7.624,
+        3.653,
+        1.45,
+        45,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "robothor_train3_2",
+      "type": "RoboTHOR furnished room",
+      "builder": "RoboTHOR",
+      "scene_index": 18,
+      "source_scene": "FloorPlan_Train3_2",
+      "source_object_count": 47,
+      "target_count": 40,
+      "camera_start": [
+        -7.056,
+        2.636,
+        1.45,
+        315,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "robothor_train4_1",
+      "type": "RoboTHOR furnished room",
+      "builder": "RoboTHOR",
+      "scene_index": 36,
+      "source_scene": "FloorPlan_Train4_1",
+      "source_object_count": 43,
+      "target_count": 40,
+      "camera_start": [
+        -7.126,
+        4.519,
+        1.45,
+        45,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "robothor_train5_4",
+      "type": "RoboTHOR furnished room",
+      "builder": "RoboTHOR",
+      "scene_index": 73,
+      "source_scene": "FloorPlan_Train5_4",
+      "source_object_count": 50,
+      "target_count": 40,
+      "camera_start": [
+        -8.928,
+        4.512,
+        1.45,
+        90,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "robothor_train12_5",
+      "type": "RoboTHOR furnished room",
+      "builder": "RoboTHOR",
+      "scene_index": 9,
+      "source_scene": "FloorPlan_Train12_5",
+      "source_object_count": 42,
+      "target_count": 40,
+      "camera_start": [
+        -8.173,
+        3.626,
+        1.45,
+        0,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "architecthor_test_01",
+      "type": "furnished apartment",
+      "builder": "ArchitecTHOR",
+      "scene_index": 7,
+      "source_scene": "ArchitecTHOR-Test-01",
+      "source_object_count": 101,
+      "target_count": 40,
+      "camera_start": [
+        -2.53,
+        -1.777,
+        1.45,
+        180,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "architecthor_test_02",
+      "type": "furnished apartment",
+      "builder": "ArchitecTHOR",
+      "scene_index": 3,
+      "source_scene": "ArchitecTHOR-Test-02",
+      "source_object_count": 123,
+      "target_count": 40,
+      "camera_start": [
+        0.841,
+        3.959,
+        1.45,
+        225,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "architecthor_test_03",
+      "type": "furnished apartment",
+      "builder": "ArchitecTHOR",
+      "scene_index": 0,
+      "source_scene": "ArchitecTHOR-Test-03",
+      "source_object_count": 117,
+      "target_count": 40,
+      "camera_start": [
+        -3.465,
+        -1.798,
+        1.45,
+        90,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "architecthor_test_04",
+      "type": "furnished apartment",
+      "builder": "ArchitecTHOR",
+      "scene_index": 8,
+      "source_scene": "ArchitecTHOR-Test-04",
+      "source_object_count": 124,
+      "target_count": 40,
+      "camera_start": [
+        -0.294,
+        4.886,
+        1.45,
+        270,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "architecthor_val_01",
+      "type": "furnished apartment",
+      "builder": "ArchitecTHOR",
+      "scene_index": 2,
+      "source_scene": "ArchitecTHOR-Val-01",
+      "source_object_count": 149,
+      "target_count": 40,
+      "camera_start": [
+        -1.441,
+        -2.673,
+        1.45,
+        90,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "architecthor_val_02",
+      "type": "furnished apartment",
+      "builder": "ArchitecTHOR",
+      "scene_index": 1,
+      "source_scene": "ArchitecTHOR-Val-02",
+      "source_object_count": 117,
+      "target_count": 40,
+      "camera_start": [
+        1.826,
+        -4.313,
+        1.45,
+        0,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "architecthor_val_03",
+      "type": "furnished apartment",
+      "builder": "ArchitecTHOR",
+      "scene_index": 5,
+      "source_scene": "ArchitecTHOR-Val-03",
+      "source_object_count": 95,
+      "target_count": 40,
+      "camera_start": [
+        -1.646,
+        1.312,
+        1.45,
+        270,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "architecthor_val_04",
+      "type": "furnished apartment",
+      "builder": "ArchitecTHOR",
+      "scene_index": 4,
+      "source_scene": "ArchitecTHOR-Val-04",
+      "source_object_count": 92,
+      "target_count": 40,
+      "camera_start": [
+        -1.942,
+        -3.168,
+        1.45,
+        0,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "replicacad_apt_0",
+      "type": "ReplicaCAD apartment",
+      "builder": "ReplicaCAD",
+      "scene_index": 0,
+      "source_scene": "apt_0",
+      "source_object_count": 118,
+      "target_count": 40,
+      "camera_start": [
+        0.524,
+        -2.413,
+        1.45,
+        135,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "replicacad_apt_1",
+      "type": "ReplicaCAD apartment",
+      "builder": "ReplicaCAD",
+      "scene_index": 1,
+      "source_scene": "apt_1",
+      "source_object_count": 125,
+      "target_count": 40,
+      "camera_start": [
+        0.448,
+        -2.023,
+        1.45,
+        135,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "replicacad_apt_2",
+      "type": "ReplicaCAD apartment",
+      "builder": "ReplicaCAD",
+      "scene_index": 2,
+      "source_scene": "apt_2",
+      "source_object_count": 124,
+      "target_count": 40,
+      "camera_start": [
+        0.469,
+        -1.883,
+        1.45,
+        135,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "replicacad_apt_3",
+      "type": "ReplicaCAD apartment",
+      "builder": "ReplicaCAD",
+      "scene_index": 3,
+      "source_scene": "apt_3",
+      "source_object_count": 123,
+      "target_count": 40,
+      "camera_start": [
+        1.049,
+        -2.032,
+        1.45,
+        135,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "replicacad_apt_4",
+      "type": "ReplicaCAD apartment",
+      "builder": "ReplicaCAD",
+      "scene_index": 4,
+      "source_scene": "apt_4",
+      "source_object_count": 123,
+      "target_count": 40,
+      "camera_start": [
+        2.11,
+        -4.393,
+        1.45,
+        135,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "replicacad_apt_5",
+      "type": "ReplicaCAD apartment",
+      "builder": "ReplicaCAD",
+      "scene_index": 5,
+      "source_scene": "apt_5",
+      "source_object_count": 118,
+      "target_count": 40,
+      "camera_start": [
+        0.284,
+        -2.237,
+        1.45,
+        135,
+        -12
+      ],
+      "batch": "additional_50"
+    },
+    {
+      "name": "procthor_train_8739",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 10468,
+      "source_scene": "ProcTHOR-Train-8739",
+      "config_file": "a/ProcTHOR-Train-8739.scene_instance.json",
+      "source_object_count": 64,
+      "source_category_count": 37,
+      "target_count": 40,
+      "camera_start": [
+        -9.976,
+        -1.769,
+        1.45,
+        315,
+        -12
+      ],
+      "camera_candidate_rank": 2
+    },
+    {
+      "name": "procthor_train_602",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 907,
+      "source_scene": "ProcTHOR-Train-602",
+      "config_file": "2/ProcTHOR-Train-602.scene_instance.json",
+      "source_object_count": 64,
+      "source_category_count": 32,
+      "target_count": 40,
+      "camera_start": [
+        -0.348,
+        -5.278,
+        1.45,
+        135,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_val_228",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 11125,
+      "source_scene": "ProcTHOR-Val-228",
+      "config_file": "c/ProcTHOR-Val-228.scene_instance.json",
+      "source_object_count": 60,
+      "source_category_count": 35,
+      "target_count": 40,
+      "camera_start": [
+        -11.287,
+        -5.118,
+        1.45,
+        315,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_test_672",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 2640,
+      "source_scene": "ProcTHOR-Test-672",
+      "config_file": "1/ProcTHOR-Test-672.scene_instance.json",
+      "source_object_count": 62,
+      "source_category_count": 44,
+      "target_count": 40,
+      "camera_start": [
+        -2.014,
+        -9.976,
+        1.45,
+        135,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_train_5373",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 9049,
+      "source_scene": "ProcTHOR-Train-5373",
+      "config_file": "7/ProcTHOR-Train-5373.scene_instance.json",
+      "source_object_count": 48,
+      "source_category_count": 31,
+      "target_count": 40,
+      "camera_start": [
+        -0.572,
+        -3.055,
+        1.45,
+        135,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_train_3862",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 5175,
+      "source_scene": "ProcTHOR-Train-3862",
+      "config_file": "5/ProcTHOR-Train-3862.scene_instance.json",
+      "source_object_count": 49,
+      "source_category_count": 35,
+      "target_count": 40,
+      "camera_start": [
+        -2.37,
+        -0.834,
+        1.45,
+        315,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_train_1025",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 8600,
+      "source_scene": "ProcTHOR-Train-1025",
+      "config_file": "3/ProcTHOR-Train-1025.scene_instance.json",
+      "source_object_count": 49,
+      "source_category_count": 30,
+      "target_count": 40,
+      "camera_start": [
+        -3.128,
+        -0.53,
+        1.45,
+        270,
+        -12
+      ],
+      "camera_candidate_rank": 1
+    },
+    {
+      "name": "procthor_train_6183",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 7357,
+      "source_scene": "ProcTHOR-Train-6183",
+      "config_file": "8/ProcTHOR-Train-6183.scene_instance.json",
+      "source_object_count": 63,
+      "source_category_count": 44,
+      "target_count": 40,
+      "camera_start": [
+        -0.459,
+        -4.944,
+        1.45,
+        135,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_train_4306",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 1202,
+      "source_scene": "ProcTHOR-Train-4306",
+      "config_file": "6/ProcTHOR-Train-4306.scene_instance.json",
+      "source_object_count": 48,
+      "source_category_count": 36,
+      "target_count": 40,
+      "camera_start": [
+        -2.94,
+        -6.652,
+        1.45,
+        135,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_train_2368",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 6472,
+      "source_scene": "ProcTHOR-Train-2368",
+      "config_file": "4/ProcTHOR-Train-2368.scene_instance.json",
+      "source_object_count": 53,
+      "source_category_count": 34,
+      "target_count": 40,
+      "camera_start": [
+        -7.456,
+        -12.185,
+        1.45,
+        135,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_train_7831",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 4057,
+      "source_scene": "ProcTHOR-Train-7831",
+      "config_file": "9/ProcTHOR-Train-7831.scene_instance.json",
+      "source_object_count": 86,
+      "source_category_count": 46,
+      "target_count": 40,
+      "camera_start": [
+        -7.015,
+        -8.201,
+        1.45,
+        135,
+        -12
+      ],
+      "camera_candidate_rank": 4
+    },
+    {
+      "name": "procthor_val_443",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 11206,
+      "source_scene": "ProcTHOR-Val-443",
+      "config_file": "c/ProcTHOR-Val-443.scene_instance.json",
+      "source_object_count": 94,
+      "source_category_count": 51,
+      "target_count": 40,
+      "camera_start": [
+        -11.86,
+        -0.395,
+        1.45,
+        0,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_train_9525",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 3442,
+      "source_scene": "ProcTHOR-Train-9525",
+      "config_file": "b/ProcTHOR-Train-9525.scene_instance.json",
+      "source_object_count": 87,
+      "source_category_count": 51,
+      "target_count": 40,
+      "camera_start": [
+        -9.141,
+        -4.681,
+        1.45,
+        0,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_test_266",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 2442,
+      "source_scene": "ProcTHOR-Test-266",
+      "config_file": "1/ProcTHOR-Test-266.scene_instance.json",
+      "source_object_count": 92,
+      "source_category_count": 46,
+      "target_count": 40,
+      "camera_start": [
+        -4.262,
+        -6.4,
+        1.45,
+        180,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_train_5251",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 9278,
+      "source_scene": "ProcTHOR-Train-5251",
+      "config_file": "7/ProcTHOR-Train-5251.scene_instance.json",
+      "source_object_count": 94,
+      "source_category_count": 50,
+      "target_count": 40,
+      "camera_start": [
+        -13.759,
+        -1.826,
+        1.45,
+        0,
+        -12
+      ],
+      "camera_candidate_rank": 4
+    },
+    {
+      "name": "procthor_train_4355",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 1631,
+      "source_scene": "ProcTHOR-Train-4355",
+      "config_file": "6/ProcTHOR-Train-4355.scene_instance.json",
+      "source_object_count": 92,
+      "source_category_count": 54,
+      "target_count": 40,
+      "camera_start": [
+        -4.763,
+        -10.937,
+        1.45,
+        0,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_train_6554",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 7345,
+      "source_scene": "ProcTHOR-Train-6554",
+      "config_file": "8/ProcTHOR-Train-6554.scene_instance.json",
+      "source_object_count": 90,
+      "source_category_count": 45,
+      "target_count": 40,
+      "camera_start": [
+        -11.487,
+        -10.956,
+        1.45,
+        45,
+        -12
+      ],
+      "camera_candidate_rank": 4
+    },
+    {
+      "name": "procthor_train_2236",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 6435,
+      "source_scene": "ProcTHOR-Train-2236",
+      "config_file": "4/ProcTHOR-Train-2236.scene_instance.json",
+      "source_object_count": 92,
+      "source_category_count": 46,
+      "target_count": 40,
+      "camera_start": [
+        -2.307,
+        -8.225,
+        1.45,
+        135,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_train_1526",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 8834,
+      "source_scene": "ProcTHOR-Train-1526",
+      "config_file": "3/ProcTHOR-Train-1526.scene_instance.json",
+      "source_object_count": 80,
+      "source_category_count": 47,
+      "target_count": 40,
+      "camera_start": [
+        -7.729,
+        -6.261,
+        1.45,
+        0,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_train_734",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 531,
+      "source_scene": "ProcTHOR-Train-734",
+      "config_file": "2/ProcTHOR-Train-734.scene_instance.json",
+      "source_object_count": 79,
+      "source_category_count": 46,
+      "target_count": 40,
+      "camera_start": [
+        -5.622,
+        -6.321,
+        1.45,
+        315,
+        -12
+      ],
+      "camera_candidate_rank": 1
+    },
+    {
+      "name": "procthor_train_3582",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 5396,
+      "source_scene": "ProcTHOR-Train-3582",
+      "config_file": "5/ProcTHOR-Train-3582.scene_instance.json",
+      "source_object_count": 123,
+      "source_category_count": 54,
+      "target_count": 40,
+      "camera_start": [
+        -2.59,
+        -6.276,
+        1.45,
+        90,
+        -12
+      ],
+      "camera_candidate_rank": 6
+    },
+    {
+      "name": "procthor_train_7248",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 4122,
+      "source_scene": "ProcTHOR-Train-7248",
+      "config_file": "9/ProcTHOR-Train-7248.scene_instance.json",
+      "source_object_count": 108,
+      "source_category_count": 58,
+      "target_count": 40,
+      "camera_start": [
+        -7.724,
+        -9.077,
+        1.45,
+        135,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_train_8076",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 10275,
+      "source_scene": "ProcTHOR-Train-8076",
+      "config_file": "a/ProcTHOR-Train-8076.scene_instance.json",
+      "source_object_count": 103,
+      "source_category_count": 56,
+      "target_count": 40,
+      "camera_start": [
+        -8.216,
+        -8.631,
+        1.45,
+        0,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_train_9180",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 3077,
+      "source_scene": "ProcTHOR-Train-9180",
+      "config_file": "b/ProcTHOR-Train-9180.scene_instance.json",
+      "source_object_count": 112,
+      "source_category_count": 56,
+      "target_count": 40,
+      "camera_start": [
+        -3.232,
+        -11.308,
+        1.45,
+        180,
+        -12
+      ],
+      "camera_candidate_rank": 4
+    },
+    {
+      "name": "procthor_train_945",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 892,
+      "source_scene": "ProcTHOR-Train-945",
+      "config_file": "2/ProcTHOR-Train-945.scene_instance.json",
+      "source_object_count": 130,
+      "source_category_count": 54,
+      "target_count": 40,
+      "camera_start": [
+        -7.993,
+        -13.569,
+        1.45,
+        45,
+        -12
+      ],
+      "camera_candidate_rank": 3
+    },
+    {
+      "name": "procthor_train_5518",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 9916,
+      "source_scene": "ProcTHOR-Train-5518",
+      "config_file": "7/ProcTHOR-Train-5518.scene_instance.json",
+      "source_object_count": 130,
+      "source_category_count": 55,
+      "target_count": 40,
+      "camera_start": [
+        -2.996,
+        -13.983,
+        1.45,
+        45,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_train_1966",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 8567,
+      "source_scene": "ProcTHOR-Train-1966",
+      "config_file": "3/ProcTHOR-Train-1966.scene_instance.json",
+      "source_object_count": 120,
+      "source_category_count": 53,
+      "target_count": 40,
+      "camera_start": [
+        -8.956,
+        -2.651,
+        1.45,
+        225,
+        -12
+      ],
+      "camera_candidate_rank": 0
+    },
+    {
+      "name": "procthor_train_3458",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 5844,
+      "source_scene": "ProcTHOR-Train-3458",
+      "config_file": "5/ProcTHOR-Train-3458.scene_instance.json",
+      "source_object_count": 130,
+      "source_category_count": 61,
+      "target_count": 40,
+      "camera_start": [
+        -0.711,
+        -9.453,
+        1.45,
+        180,
+        -12
+      ],
+      "camera_candidate_rank": 3
+    },
+    {
+      "name": "procthor_val_548",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 11317,
+      "source_scene": "ProcTHOR-Val-548",
+      "config_file": "c/ProcTHOR-Val-548.scene_instance.json",
+      "source_object_count": 109,
+      "source_category_count": 56,
+      "target_count": 40,
+      "camera_start": [
+        -3.837,
+        -11.445,
+        1.45,
+        90,
+        -12
+      ],
+      "camera_candidate_rank": 2
+    },
+    {
+      "name": "procthor_train_2700",
+      "type": "original ProcTHOR residential layout",
+      "batch": "procthor_30",
+      "builder": "ProcTHOR",
+      "scene_index": 6602,
+      "source_scene": "ProcTHOR-Train-2700",
+      "config_file": "4/ProcTHOR-Train-2700.scene_instance.json",
+      "source_object_count": 123,
+      "source_category_count": 60,
+      "target_count": 40,
+      "camera_start": [
+        -10.315,
+        -5.362,
+        1.45,
+        0,
+        -12
+      ],
+      "camera_candidate_rank": 4
+    }
+  ]
+}

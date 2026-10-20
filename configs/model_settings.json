@@ -1,0 +1,85 @@
+{
+  "note": "Historical protocol settings only, without evaluation outputs. Model aliases are provider-specific; the api_mode flag is ignored by the native Anthropic adapter.",
+  "configurations": [
+    {
+      "label": "GPT-6 Astra (xhigh)",
+      "model_id": "gpt-6-astra",
+      "reasoning_effort": "xhigh",
+      "api_backend": "openai",
+      "api_mode": "responses",
+      "max_turns": 100,
+      "batch": "prepared_80",
+      "capture_size": 512
+    },
+    {
+      "label": "GPT-6 Astra (medium)",
+      "model_id": "gpt-6-astra",
+      "reasoning_effort": "medium",
+      "api_backend": "openai",
+      "api_mode": "responses",
+      "max_turns": 100,
+      "batch": "prepared_80",
+      "capture_size": 512
+    },
+    {
+      "label": "GPT-6 Sol (xhigh)",
+      "model_id": "gpt-6-sol",
+      "reasoning_effort": "xhigh",
+      "api_backend": "openai",
+      "api_mode": "responses",
+      "max_turns": 100,
+      "batch": "prepared_80",
+      "capture_size": 512
+    },
+    {
+      "label": "Claude Opus 5.5",
+      "model_id": "claude-opus-5-5",
+      "reasoning_effort": "xhigh",
+      "api_backend": "anthropic",
+      "api_mode": "responses",
+      "max_turns": 100,
+      "batch": "prepared_80",
+      "capture_size": 512
+    },
+    {
+      "label": "Claude Sonnet 5.5",
+      "model_id": "claude-sonnet-5-5",
+      "reasoning_effort": "xhigh",
+      "api_backend": "anthropic",
+      "api_mode": "responses",
+      "max_turns": 100,
+      "batch": "prepared_80",
+      "capture_size": 512
+    },
+    {
+      "label": "DS V4.1 Flash",
+      "model_id": "deepseek-v4.1-flash",
+      "reasoning_effort": "xhigh",
+      "api_backend": "anthropic",
+      "api_mode": "responses",
+      "max_turns": 100,
+      "batch": "prepared_80",
+      "capture_size": 512
+    },
+    {
+      "label": "Qwen3.8-Max",
+      "model_id": "qwen3.8-max",
+      "reasoning_effort": "xhigh",
+      "api_backend": "anthropic",
+      "api_mode": "responses",
+      "max_turns": 100,
+      "batch": "prepared_80",
+      "capture_size": 512
+    },
+    {
+      "label": "Kimi K3",
+      "model_id": "kimi-k3",
+      "reasoning_effort": "xhigh",
+      "api_backend": "openai",
+      "api_mode": "responses",
+      "max_turns": 100,
+      "batch": "prepared_80",
+      "capture_size": 512
+    }
+  ]
+}

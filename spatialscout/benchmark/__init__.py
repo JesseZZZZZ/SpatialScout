@@ -1,0 +1,1 @@
+"""SpatialScout benchmark."""
