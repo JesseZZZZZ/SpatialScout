@@ -1,5 +1,5 @@
 # SpatialScout
-
+[![arXiv](https://img.shields.io/badge/Arxiv-SpatialScout-red?style=flat)](https://arxiv.org/pdf/2610.26659)
 [![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-SpatialScout-FFD21E)](https://huggingface.co/datasets/jessezhaoxizhang/SpatialScout)
 
 ![SpatialScout overview](docs/images/spatialscout_camera_overview_v3_white.png)
