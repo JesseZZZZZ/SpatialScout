@@ -197,7 +197,7 @@ class TurnFaucetEnv(BaseEnv):
             obs["angle_dist"] = angle_dist
         return obs
 
-    # TODO (stao, tmu): finalize a dense reward that works for turn faucet
+    # TODO: finalize a dense reward that works for turn faucet
     # def compute_dense_reward(self, info, **kwargs):
     #     reward = 0.0
 

@@ -225,7 +225,7 @@ class UnitreeG1PlaceAppleInBowlEnv(HumanoidPlaceAppleInBowl):
     - The bowl's 3D position
     """
 
-    _sample_video_link = "https://github.com/haosulab/ManiSkill/raw/main/figures/environment_demos/UnitreeG1PlaceAppleInBowl-v1_rt.mp4"
+    _sample_video_link = ""
 
     SUPPORTED_ROBOTS = ["unitree_g1_simplified_upper_body_with_head_camera"]
     agent: UnitreeG1UpperBodyWithHeadCamera
@@ -248,7 +248,7 @@ class UnitreeG1PlaceAppleInBowlEnv(HumanoidPlaceAppleInBowl):
             gpu_memory_config=GPUMemoryConfig(
                 max_rigid_contact_count=2**22, max_rigid_patch_count=2**21
             ),
-            # TODO (stao): G1 robot may need some custom collision disabling as the dextrous fingers may often be close to each other
+            # TODO: G1 robot may need some custom collision disabling as the dextrous fingers may often be close to each other
             # and slow down simulation. A temporary fix is to reduce contact_offset value down so that we don't check so many possible
             # collisions
             scene_config=SceneConfig(contact_offset=0.01),

@@ -23,7 +23,7 @@ from mani_skill.utils.visualization.misc import (
 )
 from mani_skill.utils.wrappers import CPUGymWrapper
 
-# NOTE (stao): The code for record.py is quite messy and perhaps confusing as it is trying to support both recording on CPU and GPU seamlessly
+# NOTE: The code for record.py is quite messy and perhaps confusing as it is trying to support both recording on CPU and GPU seamlessly
 # and handle partial resets. It works but can be claned up a lot.
 
 
@@ -429,7 +429,7 @@ class RecordEpisode(gym.Wrapper):
                         for k in x.keys():
                             recursive_replace(x[k], y[k])
 
-                # TODO (stao): how do we store states from GPU sim of tasks with objects not in every sub-scene?
+                # TODO: how do we store states from GPU sim of tasks with objects not in every sub-scene?
                 # Maybe we shouldn't?
                 if self.record_env_state:
                     recursive_replace(self._trajectory_buffer.state, first_step.state)
@@ -590,7 +590,7 @@ class RecordEpisode(gym.Wrapper):
                                 compression_opts=5,
                             )
                         elif key == "depth":
-                            # NOTE (stao): By default now cameras in ManiSkill return depth values of type uint16 for numpy
+                            # NOTE: By default now cameras in ManiSkill return depth values of type uint16 for numpy
                             group.create_dataset(
                                 key,
                                 data=data[start_ptr:end_ptr, env_idx],
@@ -646,7 +646,7 @@ class RecordEpisode(gym.Wrapper):
                 if self.num_envs == 1:
                     episode_info.update(reset_kwargs=self.last_reset_kwargs)
                 else:
-                    # NOTE (stao): With multiple envs in GPU simulation, reset_kwargs do not make much sense
+                    # NOTE: With multiple envs in GPU simulation, reset_kwargs do not make much sense
                     episode_info.update(reset_kwargs=dict())
 
                 # slice some data to remove the first dummy frame.

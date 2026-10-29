@@ -5,7 +5,7 @@ import torch
 def tolerance(
     x, lower=0.0, upper=0.0, margin=0.0, sigmoid="gaussian", value_at_margin=0.1
 ):
-    # modified from https://github.com/google-deepmind/dm_control/blob/554ad2753df914372597575505249f22c255979d/dm_control/utils/rewards.py#L93
+    # modified from
     """Returns 1 when `x` falls inside the bounds, between 0 and 1 otherwise.
 
     Args:

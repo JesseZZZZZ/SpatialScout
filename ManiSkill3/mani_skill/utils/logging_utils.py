@@ -1,6 +1,6 @@
 import logging
 
-# https://github.com/openai/gym/blob/master/gym/utils/colorize.py
+#
 color2num = dict(
     gray=30,
     red=31,
@@ -38,7 +38,7 @@ def colorize(
 
 
 class CustomFormatter(logging.Formatter):
-    # https://stackoverflow.com/questions/384076/how-can-i-color-python-logging-output
+    #
 
     def format(self, record):
         s = super().format(record)

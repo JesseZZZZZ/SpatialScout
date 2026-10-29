@@ -16,7 +16,7 @@ def build_robel_valve(
     scene_idxs=None,
 ):
     # Size and geometry of valve are based on the original setting of Robel benchmark, unit: m
-    # Ref: https://github.com/google-research/robel
+    # Ref:
     capsule_height = 0.039854
     capsule_length = 0.061706 * radius_scale
     capsule_radius = 0.0195 * capsule_radius_scale

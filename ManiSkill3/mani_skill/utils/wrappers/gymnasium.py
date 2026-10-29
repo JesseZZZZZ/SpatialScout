@@ -10,7 +10,7 @@ from mani_skill.utils import common
 class CPUGymWrapper(gym.Wrapper):
     """This wrapper wraps any maniskill env created via gym.make to ensure the outputs of
     env.render, env.reset, env.step are all numpy arrays and are not batched.
-    Essentially ensuring the environment conforms entirely to the standard gymnasium API https://gymnasium.farama.org/api/env/.
+    Essentially ensuring the environment conforms entirely to the standard gymnasium API
     The wrapper also optionally records standardized evaluation metrics like return and success.
 
     This wrapper should generally be applied after all other

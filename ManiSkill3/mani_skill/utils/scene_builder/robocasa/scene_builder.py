@@ -1,4 +1,4 @@
-"""Implementation of the RoboCasa scene builder. Code ported from https://github.com/robocasa/robocasa"""
+"""Implementation of the RoboCasa scene builder. Code ported from """
 
 import logging
 from copy import deepcopy
@@ -144,7 +144,7 @@ def check_syntax(fixture):
 
 class RoboCasaSceneBuilder(SceneBuilder):
     """
-    SceneBuilder for the RoboCasa dataset: https://github.com/robocasa/robocasa
+    SceneBuilder for the RoboCasa dataset:
 
     TODO explain build config idxs and init config idxs
     """
@@ -279,7 +279,7 @@ class RoboCasaSceneBuilder(SceneBuilder):
                             size[i] = ref_fxtr.size[i]
 
                 # initialize fixture
-                # TODO (stao): use batched episode rng later
+                # TODO: use batched episode rng later
                 fixture = scene_utils.initialize_fixture(
                     self.scene,
                     fixture_config,
@@ -496,7 +496,7 @@ class RoboCasaSceneBuilder(SceneBuilder):
             self.env.agent.base_link.set_collision_group_bit(group=2, bit_idx=31, bit=1)
 
         elif self.env.robot_uids == "unitree_g1_simplified_upper_body":
-            # TODO (stao): determine collisions to disable for unitree robot
+            # TODO: determine collisions to disable for unitree robot
             pass
 
     def _generate_initial_placements(
@@ -652,7 +652,7 @@ class RoboCasaSceneBuilder(SceneBuilder):
                 ]
             assert len(matches) > 0
             # sample random key
-            # TODO (stao): fix the key!
+            # TODO: fix the key!
             key = self.env._episode_rng.choice(matches)
             return fixtures[key]
         else:

@@ -216,7 +216,7 @@ class ActorBuilder(SAPIENActorBuilder):
 
         if self.initial_pose is None:
             logger.warn(
-                f"No initial pose set for actor builder of {self.name}, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see https://github.com/haosulab/ManiSkill/issues/421."
+                f"No initial pose set for actor builder of {self.name}, setting to default pose q=[1,0,0,0], p=[0,0,0]. Not setting reasonable initial poses may slow down simulation, see "
             )
             self.initial_pose = Pose.create(sapien.Pose())
         else:
@@ -273,7 +273,7 @@ class ActorBuilder(SAPIENActorBuilder):
         mat: sapien.render.RenderMaterial = None,
         texture_repeat: List[float] = [1, 1],
     ):
-        """Procedurally generateds a repeated 2D texture. Works similarly to https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-material-texrepeat
+        """Procedurally generateds a repeated 2D texture. Works similarly to
 
         currently this always adds a back face
 

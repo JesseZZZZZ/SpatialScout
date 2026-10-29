@@ -20,7 +20,7 @@ def images_to_video(
     **kwargs,
 ):
     r"""Calls imageio to run FFMPEG on a list of images. For more info on
-    parameters, see https://imageio.readthedocs.io/en/stable/format_ffmpeg.html
+    parameters, see
     Args:
         images: The list of images. Images should be HxWx3 in RGB order.
         output_dir: The folder to put the video in.
@@ -33,7 +33,7 @@ def images_to_video(
             instead. Specifying a fixed bitrate using ‘bitrate’ disables
             this parameter.
     References:
-        https://github.com/facebookresearch/habitat-lab/blob/main/habitat/utils/visualizations/utils.py
+
     """
     assert 0 <= quality <= 10
     if not os.path.exists(output_dir):

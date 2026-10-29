@@ -331,7 +331,7 @@ class Actor(PhysxRigidDynamicComponentStruct[sapien.Entity]):
     def pose(self) -> Pose:
         if self.scene.gpu_sim_enabled:
             if self.px_body_type == "static":
-                # NOTE (stao): usually _builder_initial_pose is just one pose, but for static objects in GPU sim we repeat it if necessary so it can be used
+                # NOTE: usually _builder_initial_pose is just one pose, but for static objects in GPU sim we repeat it if necessary so it can be used
                 # as part of observations if needed
                 return self.initial_pose
             else:

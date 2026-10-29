@@ -1,12 +1,10 @@
 # SpatialScout
 
-[![Hugging Face Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-SpatialScout-FFD21E)](https://huggingface.co/datasets/jessezhaoxizhang/SpatialScout)
-[![GitHub](https://img.shields.io/badge/GitHub-SpatialScout-181717?logo=github)](https://github.com/JesseZZZZZ/SpatialScout)
 
 Camera-based, interactive 3D object localization with vision-language models.
 This repository contains the code to **rerun the evaluation with your own model
 API**. Scene meshes, textures, robot resources and reference annotations are
-available on [Hugging Face](https://huggingface.co/datasets/jessezhaoxizhang/SpatialScout).
+supplied separately with the review materials.
 Raw predictions, trajectories and prior experiment outputs are not distributed.
 The figures below illustrate the benchmark and its reported results.
 
@@ -61,7 +59,7 @@ and CPU permit it. Installation downloads Python wheels and requires internet.
 Model evaluation also needs your own vision/tool-capable API service.
 
 The renderer is pinned to **SAPIEN 3.0.0b1**, **NumPy 1.26.4**, and the vendored
-ManiSkill3 snapshot (`3e948a52219f663456b74b500e25b5407a04a86a` plus local changes).
+ManiSkill3 snapshot with local changes.
 The installer uses **PyTorch 2.5.1+cpu** and Mesa lavapipe Vulkan.
 `requirements/render-cpu.txt` pins the Python dependencies.
 `requirements/frozen.txt` is a reference snapshot of the original host (including
@@ -83,17 +81,7 @@ This creates `assets/`, `benchmark_data`, and links for the simulator's binary
 resources. Keep the dataset directory available. Nothing is copied into Git and
 no historical `outputs/` directory is needed.
 
-After the dataset is published, you may download it with `snapshot_download`:
-
-```python
-from huggingface_hub import snapshot_download
-snapshot_download(repo_id="jessezhaoxizhang/SpatialScout", repo_type="dataset",
-                  local_dir="/absolute/path/to/SpatialScout")
-```
-
-Dataset repository: [jessezhaoxizhang/SpatialScout](https://huggingface.co/datasets/jessezhaoxizhang/SpatialScout).
-Code repository: [JesseZZZZZ/SpatialScout](https://github.com/JesseZZZZZ/SpatialScout).
-The dataset can also be attached directly from the accompanying local release folder.
+Use the accompanying local dataset folder; external download destinations are omitted for anonymous review.
 
 ## 4. Install the environment (native Linux)
 
@@ -109,6 +97,7 @@ provide an existing Python 3.10 executable via `RENDER_PYTHON`.
 Run from this repository root:
 
 ```bash
+# Set TORCH_INDEX_URL to your CPU wheel package index before installation.
 RENDER_PYTHON=python3.10 bash setup_render_environment.sh
 ```
 
@@ -147,7 +136,8 @@ bash render_env.sh -m spatialscout.data.index
 Set your own endpoint, key and exact model ID. No credentials are bundled.
 
 ```bash
-export VLM_BASE_URL='https://YOUR_API_HOST/v1'
+# Set MODEL_API_BASE to your model service endpoint.
+export VLM_BASE_URL="$MODEL_API_BASE"
 export VLM_API_KEY='YOUR_OWN_KEY'
 export VLM_MODEL='EXACT_MODEL_ID'
 export VLM_API_BACKEND=openai
@@ -297,8 +287,8 @@ scratch, or build the Docker image on another machine.
 ## 9. Publish to GitHub and Hugging Face
 
 ```bash
-python3 scripts/upload_github.py
-python3 scripts/upload_huggingface.py --folder "$SPATIALSCOUT_DATA"
+python3 scripts/upload_github.py --remote "$CODE_REMOTE"
+python3 scripts/upload_huggingface.py --repo-id "$DATASET_REPO_ID" --folder "$SPATIALSCOUT_DATA"
 ```
 
 Each script prompts for its own platform access token with hidden input. These

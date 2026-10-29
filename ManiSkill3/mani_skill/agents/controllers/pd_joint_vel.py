@@ -9,7 +9,7 @@ from mani_skill.utils.structs.types import DriveMode
 from .base_controller import BaseController, ControllerConfig
 
 
-# TODO (stao): add GPU support here
+# TODO: add GPU support here
 class PDJointVelController(BaseController):
     config: "PDJointVelControllerConfig"
 

@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 __version__ = "3.0.0b15"
 
-long_description = """ManiSkill is a powerful unified framework for robot simulation and training powered by [SAPIEN](https://sapien.ucsd.edu/), with a strong focus on manipulation skills. The entire tech stack is as open-source as possible and ManiSkill v3 is in beta release now. Among its features include:
+long_description = """ManiSkill is a powerful unified framework for robot simulation and training powered by SAPIEN, with a strong focus on manipulation skills. The entire tech stack is as open-source as possible and ManiSkill v3 is in beta release now. Among its features include:
 - GPU parallelized visual data collection system. On the high end you can collect RGBD + Segmentation data at 30,000+ FPS with a 4090 GPU!
 - GPU parallelized simulation, enabling high throughput state-based synthetic data collection in simulation
 - GPU parallelized heteogeneous simuluation, where every parallel environment has a completely different scene/set of objects
@@ -10,7 +10,7 @@ long_description = """ManiSkill is a powerful unified framework for robot simula
 - Flexible and simple task building API that abstracts away much of the complex GPU memory management code via an object oriented design
 - Real2sim environments for scalably evaluating real-world policies 60-100x faster via GPU simulation.
 
-Please refer our [documentation](https://maniskill.readthedocs.io/en/latest) to learn more information."""
+Please refer our documentation to learn more information."""
 
 setup(
     name="mani_skill",
@@ -19,7 +19,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="ManiSkill contributors",
-    url="https://github.com/haosulab/ManiSkill",
+    url="",
     packages=find_packages(include=["mani_skill*"]),
     python_requires=">=3.9",
     setup_requires=["setuptools>=62.3.0"],
@@ -65,7 +65,7 @@ setup(
             "pytest-forked",
         ],
         "docs": [
-            # Note that currently sphinx 7 does not work, so we must use v6.2.1. See https://github.com/kivy/kivy/issues/8230 which tracks this issue. Once fixed we can use a later version
+            # Note that currently sphinx 7 does not work, so we must use v6.2.1. See  which tracks this issue. Once fixed we can use a later version
             "sphinx==6.2.1",
             "sphinx-autobuild",
             "pydata_sphinx_theme",

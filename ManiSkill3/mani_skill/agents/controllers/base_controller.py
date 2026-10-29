@@ -286,7 +286,7 @@ class CombinedController(DictController):
 
     def set_action(self, action: np.ndarray):
         # Sanity check
-        # TODO (stao): optimization, do we really need this sanity check? Does gymnasium already do this for us
+        # TODO: optimization, do we really need this sanity check? Does gymnasium already do this for us
         if self.scene.num_envs > 1:
             action_dim = self.action_space.shape[1]
         else:

@@ -1,4 +1,4 @@
-"""Adapted from https://github.com/google-deepmind/dm_control/blob/main/dm_control/suite/humanoid.py"""
+"""Adapted from """
 
 from typing import Any, Dict, Union
 

@@ -147,12 +147,12 @@ class ManiSkillVectorEnv(VectorEnv):
             infos["final_info"] = infos.copy()
             # gymnasium calls it final observation but it really is just o_{t+1} or the true next observation
             infos["final_observation"] = final_obs
-            # NOTE (stao): that adding masks like below is a bit redundant and not necessary
+            # NOTE: that adding masks like below is a bit redundant and not necessary
             # but this is to follow the standard gymnasium API
             infos["_final_info"] = dones
             infos["_final_observation"] = dones
             infos["_elapsed_steps"] = dones
-            # NOTE (stao): Unlike gymnasium, the code here does not add masks for every key in the info object.
+            # NOTE: Unlike gymnasium, the code here does not add masks for every key in the info object.
         return obs, rew, terminations, truncations, infos
 
     def close(self):

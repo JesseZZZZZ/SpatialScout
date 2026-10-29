@@ -448,7 +448,7 @@ class RoboCasaKitchenEnv(BaseEnv):
     def _initialize_episode(self, env_idx: torch.Tensor, options: dict):
         with torch.device(self.device):
             self.scene_builder.initialize(env_idx)
-            # TODO (stao): no way to make this faster atm on GPU without a lot of work
+            # TODO: no way to make this faster atm on GPU without a lot of work
             for scene_idx in range(self.num_envs):
                 for actor_data in self.object_actors[scene_idx].values():
                     actor_data["actor"].set_pose(actor_data["pose"])

@@ -63,7 +63,7 @@ class PegInsertionSideEnv(BaseEnv):
     - The white end of the peg is within 0.015m of the center of the box (inserted mid way).
     """
 
-    _sample_video_link = "https://github.com/haosulab/ManiSkill/raw/main/figures/environment_demos/PegInsertionSide-v1_rt.mp4"
+    _sample_video_link = ""
     SUPPORTED_ROBOTS = ["panda_wristcam"]
     agent: Union[PandaWristCam]
     _clearance = 0.003
@@ -262,7 +262,7 @@ class PegInsertionSideEnv(BaseEnv):
 
     @property
     def goal_pose(self):
-        # NOTE (stao): this is fixed after each _initialize_episode call. You can cache this value
+        # NOTE: this is fixed after each _initialize_episode call. You can cache this value
         # and simply store it after _initialize_episode or set_state_dict calls.
         return self.box.pose * self.box_hole_offsets * self.peg_head_offsets.inv()
 

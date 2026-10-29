@@ -48,7 +48,7 @@ def get_commit_info(show_modified_files=False, show_untracked_files=False):
         )
 
         if show_modified_files:
-            # https://stackoverflow.com/questions/33733453/get-changed-files-using-gitpython
+            #
             modified_files = [item.a_path for item in repo.index.diff(None)]
             commit_info["modified"] = modified_files
 
@@ -56,7 +56,7 @@ def get_commit_info(show_modified_files=False, show_untracked_files=False):
             repo.untracked_files
             commit_info["untracked"] = modified_files
 
-        # https://github.com/gitpython-developers/GitPython/issues/718#issuecomment-360267779
+        #
         repo.__del__()
         return commit_info
 

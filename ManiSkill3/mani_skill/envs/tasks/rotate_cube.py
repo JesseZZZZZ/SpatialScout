@@ -19,8 +19,8 @@ from mani_skill.utils.structs.types import Array, GPUMemoryConfig, SimConfig
 
 class RotateCubeEnv(BaseEnv):
     """
-    Modified from https://github.com/NVIDIA-Omniverse/IsaacGymEnvs/blob/main/isaacgymenvs/tasks/trifinger.py
-    https://github.com/NVIDIA-Omniverse/IsaacGymEnvs/blob/main/isaacgymenvs/cfg/task/Trifinger.yaml
+    Modified from
+
     """
 
     SUPPORTED_ROBOTS = ["trifingerpro"]
@@ -155,7 +155,7 @@ class RotateCubeEnv(BaseEnv):
         ).repeat(b, 1)
 
         def random_xy() -> Tuple[torch.Tensor, torch.Tensor]:
-            """Returns sampled uniform positions in circle (https://stackoverflow.com/a/50746409)"""
+            """Returns sampled uniform positions in circle ()"""
             # sample radius of circle
             radius = torch.sqrt(torch.rand(b, dtype=torch.float, device=self.device))
             radius *= self.max_com_distance_to_center

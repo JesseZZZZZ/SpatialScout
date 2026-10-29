@@ -109,7 +109,7 @@ class FlattenActionSpaceWrapper(gym.ActionWrapper):
         ):
             action = common.batch(action)
 
-        # TODO (stao): This code only supports flat dictionary at the moment
+        # TODO: This code only supports flat dictionary at the moment
         unflattened_action = dict()
         start, end = 0, 0
         for k, space in self._orig_single_action_space.items():

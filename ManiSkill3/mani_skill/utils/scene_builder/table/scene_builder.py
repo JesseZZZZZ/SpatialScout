@@ -14,7 +14,7 @@ from mani_skill.utils.building.ground import build_ground
 from mani_skill.utils.scene_builder import SceneBuilder
 
 
-# TODO (stao): make the build and initialize api consistent with other scenes
+# TODO: make the build and initialize api consistent with other scenes
 class TableSceneBuilder(SceneBuilder):
     def build(self):
         builder = self.scene.create_actor_builder()

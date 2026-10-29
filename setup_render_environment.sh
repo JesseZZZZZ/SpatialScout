@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
+: "${TORCH_INDEX_URL:?Set TORCH_INDEX_URL to your CPU wheel package index}"
 cd "$(dirname "$0")"
 
 if [[ "${SKIP_SYSTEM_PACKAGES:-0}" != 1 ]]; then
@@ -22,7 +23,7 @@ if [[ ! -x .venv/bin/python ]]; then
   "$render_python" -m venv .venv
 fi
 .venv/bin/python -m pip install 'pip>=24' 'setuptools==80.10.2' wheel
-.venv/bin/python -m pip install 'torch==2.5.1+cpu' --index-url https://download.pytorch.org/whl/cpu
+.venv/bin/python -m pip install 'torch==2.5.1+cpu' --index-url "$TORCH_INDEX_URL"
 .venv/bin/python -m pip install -r requirements/render-cpu.txt
 .venv/bin/python -m pip install --no-deps -e ./ManiSkill3
 .venv/bin/python -m pip install --no-deps -e .

@@ -68,7 +68,7 @@ class PDEEPosController(PDJointPosController):
         if self._target_pose is None:
             self._target_pose = self.ee_pose_at_base
         else:
-            # TODO (stao): this is a strange way to mask setting individual batched pose parts
+            # TODO: this is a strange way to mask setting individual batched pose parts
             self._target_pose.raw_pose[
                 self.scene._reset_mask
             ] = self.ee_pose_at_base.raw_pose[self.scene._reset_mask]
@@ -127,7 +127,7 @@ class PDEEPosController(PDJointPosController):
             )
 
 
-# TODO (stao): This config should really inherit the pd joint pos controller config
+# TODO: This config should really inherit the pd joint pos controller config
 @dataclass
 class PDEEPosControllerConfig(ControllerConfig):
     pos_lower: Union[float, Sequence[float]]
@@ -135,7 +135,7 @@ class PDEEPosControllerConfig(ControllerConfig):
     pos_upper: Union[float, Sequence[float]]
     """Upper bound for position control. If a single float then X, Y, and Z rotations are bounded by this value. Otherwise can be three floats to specify each dimensions bounds"""
 
-    # TODO (stao): note stiffness, damping, force limit and friction are properties used by PDJointPos controller, which the PDEEPosController controller inherits from
+    # TODO: note stiffness, damping, force limit and friction are properties used by PDJointPos controller, which the PDEEPosController controller inherits from
     # this should be changed as its difficult to figure out how this code is used
     stiffness: Union[float, Sequence[float]]
     damping: Union[float, Sequence[float]]
@@ -152,7 +152,7 @@ class PDEEPosControllerConfig(ControllerConfig):
         "root_translation",
     ] = "root_translation"
     """Choice of frame to use for translational and rotational control of the end-effector. To learn how these work explicitly
-    with videos of each one's behavior see https://maniskill.readthedocs.io/en/latest/user_guide/concepts/controllers.html#pd-ee-end-effector-pose"""
+    with videos of each one's behavior see """
     use_delta: bool = True
     """Whether to use delta-action control. If true then actions indicate the delta/change in position via translation and orientation via
     rotation. If false, then actions indicate in the base frame (typically wherever the root link of the robot is) what pose the end effector
@@ -257,6 +257,6 @@ class PDEEPoseControllerConfig(PDEEPosControllerConfig):
         "root_translation:body_aligned_body_rotation",
     ] = "root_translation:root_aligned_body_rotation"
     """Choice of frame to use for translational and rotational control of the end-effector. To learn how these work explicitly
-    with videos of each one's behavior see https://maniskill.readthedocs.io/en/latest/user_guide/concepts/controllers.html#pd-ee-end-effector-pose"""
+    with videos of each one's behavior see """
 
     controller_cls = PDEEPoseController

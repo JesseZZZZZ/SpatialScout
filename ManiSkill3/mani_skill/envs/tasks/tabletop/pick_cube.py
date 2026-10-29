@@ -32,7 +32,7 @@ class PickCubeEnv(BaseEnv):
     - the robot is static (q velocity < 0.2)
     """
 
-    _sample_video_link = "https://github.com/haosulab/ManiSkill/raw/main/figures/environment_demos/PickCube-v1_rt.mp4"
+    _sample_video_link = ""
     SUPPORTED_ROBOTS = ["panda", "fetch"]
     agent: Union[Panda, Fetch]
     cube_half_size = 0.02

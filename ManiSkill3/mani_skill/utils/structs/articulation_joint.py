@@ -280,7 +280,7 @@ class ArticulationJoint(BaseStruct[physx.PhysxArticulationJoint]):
 
     @friction.setter
     # @before_gpu_init
-    # TODO (stao): can we set this after gpu is initialized?
+    # TODO: can we set this after gpu is initialized?
     def friction(self, arg1: float) -> None:
         for joint in self._objs:
             joint.friction = arg1
@@ -291,7 +291,7 @@ class ArticulationJoint(BaseStruct[physx.PhysxArticulationJoint]):
 
     @property
     def limits(self) -> torch.Tensor:
-        # TODO (stao): create a decorator that caches results once gpu sim is initialized for performance
+        # TODO: create a decorator that caches results once gpu sim is initialized for performance
         return common.to_tensor(
             np.array([obj.limits[0] for obj in self._objs]), device=self.device
         )

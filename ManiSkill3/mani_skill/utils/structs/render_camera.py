@@ -21,7 +21,7 @@ from mani_skill.utils.structs.pose import Pose
 if SAPIEN_RENDER_SYSTEM == "3.1":
     sapien.render.RenderCameraGroup = "oldtype"  # type: ignore
 
-# NOTE (stao): commented out functions are functions that are not confirmed to be working in the wrapped class but the original class has
+# NOTE: commented out functions are functions that are not confirmed to be working in the wrapped class but the original class has
 
 
 @dataclass
@@ -32,7 +32,7 @@ class RenderCamera:
 
     _render_cameras: List[sapien.render.RenderCameraComponent]
     name: str
-    # NOTE (stao): I cannot seem to use ManiSkillScene as a type here, it complains it is undefined despite using TYPE_CHECKING variable. Without typchecking there is a ciruclar import error
+    # NOTE: I cannot seem to use ManiSkillScene as a type here, it complains it is undefined despite using TYPE_CHECKING variable. Without typchecking there is a ciruclar import error
     scene: Any
     camera_group: sapien.render.RenderCameraGroup = None
     mount: Union[Actor, Link] = None
@@ -40,7 +40,7 @@ class RenderCamera:
     # we cache model and extrinsic matrices since the code here supports computing these when the camera is mounted and these are always changing
     _cached_model_matrix: torch.Tensor = None
     _cached_extrinsic_matrix: torch.Tensor = None
-    # NOTE (stao): default @cache from functools seems to cause CPU memory leaks in dataclasses, so we cache ourselves here
+    # NOTE: default @cache from functools seems to cause CPU memory leaks in dataclasses, so we cache ourselves here
     _cached_intrinsic_matrix: torch.Tensor = None
     _cached_local_pose: Pose = None
 
@@ -135,7 +135,7 @@ class RenderCamera:
         if self.scene.gpu_sim_enabled:
             if self._cached_model_matrix is not None:
                 return self._cached_model_matrix
-            # NOTE (stao): This code is based on SAPIEN. It cannot expose GPU buffers of this data of all cameras directly so
+            # NOTE: This code is based on SAPIEN. It cannot expose GPU buffers of this data of all cameras directly so
             # we have to compute it here based on how SAPIEN does it:
             POSE_GL_TO_ROS = Pose.create_from_pq(p=[0, 0, 0], q=[-0.5, -0.5, 0.5, 0.5])
             pose = self.get_global_pose() * POSE_GL_TO_ROS
@@ -312,7 +312,7 @@ class RenderCamera:
                 self._render_cameras[0].get_global_pose().q,
             )
 
-    # TODO (stao): These properties should be torch tensors in the future
+    # TODO: These properties should be torch tensors in the future
     @property
     def height(self) -> int:
         return self._render_cameras[0].height

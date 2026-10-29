@@ -1,4 +1,4 @@
-# TODO (stao): reimplement this
+# TODO: reimplement this
 
 
 import numpy as np

@@ -383,7 +383,7 @@ class UniformRandomSampler(ObjectPositionSampler):
                 quat = self._sample_quat()
                 quat = qmult(ref_quat, quat)
 
-                # note (stao): what is init_quat? we might not need it
+                # note : what is init_quat? we might not need it
                 # if hasattr(obj, "init_quat"):
                 #     quat = quat_multiply(obj.init_quat, quat)
                 # quat = convert_quat(
@@ -408,7 +408,7 @@ class UniformRandomSampler(ObjectPositionSampler):
                     location_valid = False
                     continue
 
-                # TODO (stao): ensure no overlap
+                # TODO: ensure no overlap
                 # objects cannot overlap
                 if self.ensure_valid_placement:
                     for (x, y, z), other_quat, other_obj in placed_objects.values():

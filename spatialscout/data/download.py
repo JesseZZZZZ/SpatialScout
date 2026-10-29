@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import struct
 import threading
 import time
@@ -13,7 +14,7 @@ from remotezip import RemoteZip
 
 
 from spatialscout.paths import ROOT, CATALOG_PATH
-URL = "https://huggingface.co/datasets/haosulab/AI2THOR/resolve/main/ai2thor.zip"
+URL = os.environ.get("SPATIALSCOUT_ASSET_URL", "")
 DEFAULT_SCENES = (
     "FloorPlan1", "FloorPlan7", "FloorPlan201", "FloorPlan227",
     "FloorPlan301", "FloorPlan320", "FloorPlan401", "FloorPlan421",
@@ -100,6 +101,8 @@ def main():
     parser.add_argument("--workers", type=int, default=12)
     parser.add_argument("--destination", type=Path, default=ROOT / "assets" / "scene_datasets" / "ai2thor")
     args = parser.parse_args()
+    if not URL:
+        parser.error("Set SPATIALSCOUT_ASSET_URL or attach the supplied local dataset with scripts/attach_data.py")
     if args.catalog_batch and args.scenes:
         parser.error("Pass scene names or --catalog-batch, not both")
     if args.catalog_batch:

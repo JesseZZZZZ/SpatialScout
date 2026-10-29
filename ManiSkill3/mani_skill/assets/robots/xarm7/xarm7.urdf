@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--GLB Source: https://github.com/sapien-sim/xarm7/tree/master/sapien_xarm7/xarm_urdf/xarm_description/meshes-->
+<!-- GLB source omitted for anonymous review. -->
 <robot name="xarm7">
   <link name="link_base">
     <inertial>

@@ -10,7 +10,7 @@ from mani_skill.utils import common
 from mani_skill.utils.structs.actor import Actor
 
 
-# TODO (stao) (xuanlin): model it properly based on real2sim
+# TODO: model it properly based on real2sim
 @register_agent(asset_download_ids=["widowx250s"])
 class WidowX250S(BaseAgent):
     uid = "widowx250s"

@@ -23,7 +23,7 @@ if TYPE_CHECKING:
 
 @dataclass
 class Drive(PhysxJointComponentStruct[physx.PhysxDriveComponent]):
-    # drive_target: Pose # TODO (stao): what is this?
+    # drive_target: Pose # TODO: what is this?
 
     def __hash__(self):
         return self.__maniskill_hash__
@@ -52,7 +52,7 @@ class Drive(PhysxJointComponentStruct[physx.PhysxDriveComponent]):
             physx_drives.append(
                 sub_scene.create_drive(bodies0[i], pose0[0].sp, bodies1[i], pose1[0].sp)
             )
-        # NOTE (stao): SAPIEN structure might have some inconsistency? For drives there is no such thing as bodies / being able to compute
+        # NOTE: SAPIEN structure might have some inconsistency? For drives there is no such thing as bodies / being able to compute
         # aabbs
         return cls(
             _objs=physx_drives,
@@ -118,7 +118,7 @@ class Drive(PhysxJointComponentStruct[physx.PhysxDriveComponent]):
     # def set_drive_property_twist(self, stiffness: float, damping: float, force_limit: float = 3.4028234663852886e+38, mode: typing.Literal['force', 'acceleration'] = 'force') -> None:
     #     ...
 
-    # TODO (stao): permit providing batched values
+    # TODO: permit providing batched values
     @before_gpu_init
     def set_drive_property_x(
         self,

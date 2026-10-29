@@ -79,7 +79,7 @@ class Kinematics:
     def _setup_cpu(self):
         """setup the kinematics solvers on the CPU"""
         self.use_gpu_ik = False
-        # NOTE (stao): currently using the pinnochio that comes packaged with SAPIEN
+        # NOTE: currently using the pinnochio that comes packaged with SAPIEN
         self.qmask = torch.zeros(
             self.articulation.max_dof, dtype=bool, device=self.device
         )
@@ -94,7 +94,7 @@ class Kinematics:
         with open(self.urdf_path, "rb") as f:
             urdf_str = f.read()
 
-        # NOTE (stao): it seems that the pk library currently always outputs some complaints if there are unknown attributes in a URDF. Hide it with this contextmanager here
+        # NOTE: it seems that the pk library currently always outputs some complaints if there are unknown attributes in a URDF. Hide it with this contextmanager here
         @contextmanager
         def suppress_stdout_stderr():
             """A context manager that redirects stdout and stderr to devnull"""
@@ -167,7 +167,7 @@ class Kinematics:
                 if pos_only:
                     jacobian = jacobian[:, 0:3]
 
-                # NOTE (stao): this method of IK is from https://mathweb.ucsd.edu/~sbuss/ResearchWeb/ikmethods/iksurvey.pdf by Samuel R. Buss
+                # NOTE: this method of IK is from
                 delta_joint_pos = torch.linalg.pinv(jacobian) @ action.unsqueeze(-1)
                 return q0 + delta_joint_pos.squeeze(-1)
         else:

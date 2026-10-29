@@ -1,5 +1,5 @@
 """
-Code for building scenes from the ReplicaCAD dataset https://aihabitat.org/datasets/replica_cad/
+Code for building scenes from the ReplicaCAD dataset
 
 This code is also heavily commented to serve as a tutorial for how to build custom scenes from scratch and/or port scenes over from other datasets/simulators
 """

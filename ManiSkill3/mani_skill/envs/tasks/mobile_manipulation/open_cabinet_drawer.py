@@ -23,7 +23,7 @@ from mani_skill.utils.structs.types import GPUMemoryConfig, SimConfig
 CABINET_COLLISION_BIT = 29
 
 
-# TODO (stao): we need to cut the meshes of all the cabinets in this dataset for gpu sim, there may be some wierd physics
+# TODO: we need to cut the meshes of all the cabinets in this dataset for gpu sim, there may be some wierd physics
 # that may happen although it seems okay for state based RL
 @register_env(
     "OpenCabinetDrawer-v1",
@@ -48,7 +48,7 @@ class OpenCabinetDrawerEnv(BaseEnv):
     - 3D goal position centered at the center of mass of the handle mesh on the drawer to open (also visualized in human renders with a sphere).
     """
 
-    _sample_video_link = "https://github.com/haosulab/ManiSkill/raw/main/figures/environment_demos/OpenCabinetDrawer-v1_rt.mp4"
+    _sample_video_link = ""
 
     SUPPORTED_ROBOTS = ["fetch"]
     agent: Union[Fetch]
@@ -155,7 +155,7 @@ class OpenCabinetDrawerEnv(BaseEnv):
             handle_links.append([])
             handle_links_meshes.append([])
 
-            # TODO (stao): At the moment code for selecting semantic parts of articulations
+            # TODO: At the moment code for selecting semantic parts of articulations
             # is not very simple. Will be improved in the future as we add in features that
             # support part and mesh-wise annotations in a standard querable format
             for link, joint in zip(cabinet.links, cabinet.joints):
@@ -277,7 +277,7 @@ class OpenCabinetDrawerEnv(BaseEnv):
             self.cabinet.set_qpos(qlimits[env_idx, :, 0])
             self.cabinet.set_qvel(self.cabinet.qpos[env_idx] * 0)
 
-            # NOTE (stao): This is a temporary work around for the issue where the cabinet drawers/doors might open
+            # NOTE: This is a temporary work around for the issue where the cabinet drawers/doors might open
             # themselves on the first step. It's unclear why this happens on GPU sim only atm.
             # moreover despite setting qpos/qvel to 0, the cabinets might still move on their own a little bit.
             # this may be due to oblong meshes.

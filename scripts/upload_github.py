@@ -12,9 +12,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
-from urllib.request import Request, urlopen
 
-REMOTE = 'https://github.com/JesseZZZZZ/SpatialScout.git'
 HERE = Path(__file__).resolve().parent
 DEFAULT = HERE.parent if HERE.name == 'scripts' else HERE/'github/SpatialScout'
 REMOVED = {'analyze_astra_deepseek_grounding.py','benchmark_sim_parallelism.py','evaluate_saved_results.py',
@@ -31,9 +29,11 @@ def relative_file(name):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--remote', required=True, help='Destination Git repository supplied by the user')
     parser.add_argument('--folder', type=Path, default=DEFAULT)
     args=parser.parse_args()
     source=args.folder.expanduser().resolve()
+    remote=args.remote
     if not shutil.which('git'):parser.error('git is required; install it before uploading.')
     if not (source/'MANIFEST.json').is_file():parser.error(f'MANIFEST.json not found in {source}')
     manifest=json.loads((source/'MANIFEST.json').read_text())
@@ -44,8 +44,6 @@ def main():
     token=os.environ.get('GITHUB_TOKEN') or getpass.getpass('GitHub personal access token (hidden): ').strip()
     if not token:parser.error('A GitHub token is required.')
     try:
-        request=Request('https://api.github.com/user',headers={'Authorization':f'Bearer {token}','Accept':'application/vnd.github+json','User-Agent':'SpatialScout-release'})
-        with urlopen(request,timeout=60) as response:user=json.load(response)
         with tempfile.TemporaryDirectory(prefix='spatialscout-github-') as tmp:
             temporary=Path(tmp);checkout=temporary/'repo';helper=temporary/'askpass.py'
             helper.write_text('#!'+sys.executable+'\nimport os,sys\nprompt=" ".join(sys.argv[1:]).lower()\nprint("x-access-token" if "username" in prompt else os.environ["SPATIALSCOUT_UPLOAD_TOKEN"])\n')
@@ -59,8 +57,8 @@ def main():
                 if result.returncode:
                     raise RuntimeError((result.stderr or result.stdout).strip().replace(token,'[REDACTED]'))
                 return result.stdout.strip()
-            print(f'Uploading {len(files)} release files to {REMOTE}',flush=True)
-            git('clone','--depth','1',REMOTE,str(checkout))
+            print(f'Uploading {len(files)} release files to {remote}',flush=True)
+            git('clone','--depth','1',remote,str(checkout))
             branch=git('branch','--show-current',cwd=checkout) or 'main'
             if not (checkout/'.git/refs/heads'/branch).exists():
                 # For a completely empty remote, use main for the first commit.
@@ -83,14 +81,14 @@ def main():
                 destination=checkout/name;destination.parent.mkdir(parents=True,exist_ok=True)
                 if destination.is_symlink():destination.unlink()
                 shutil.copy2(source/name,destination)
-            git('config','user.name',user['login'],cwd=checkout)
-            git('config','user.email',f'{user["id"]}+{user["login"]}@users.noreply.github.com',cwd=checkout)
+            git('config','user.name','Anonymous',cwd=checkout)
+            git('config','user.email','anonymous',cwd=checkout)
             git('add','--all',cwd=checkout)
             if not git('status','--porcelain',cwd=checkout):
                 print('The remote release already matches these files.');return
             git('commit','-m','Publish SpatialScout evaluation code and documentation',cwd=checkout)
             git('push','origin',f'HEAD:{branch}',cwd=checkout)
-        print('Uploaded: https://github.com/JesseZZZZZ/SpatialScout')
+        print('Upload complete.')
     except Exception as exc:
         raise SystemExit('GitHub upload failed: '+str(exc).replace(token,'[REDACTED]')) from None
 

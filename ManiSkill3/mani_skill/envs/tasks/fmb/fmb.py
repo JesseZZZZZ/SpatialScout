@@ -23,7 +23,7 @@ class FMBAssembly1Env(BaseEnv):
     """
     Task Description
     ----------------
-    This task is a simulation version of one of the Multi-Object Multi-Stage Manipulation Tasks (Assembly1) from [Functional Manipulation Benchmark (Luo et. al)](https://functional-manipulation-benchmark.github.io/index.html).
+    This task is a simulation version of one of the Multi-Object Multi-Stage Manipulation Tasks (Assembly1) from Functional Manipulation Benchmark .
     The goal here is to assemble parts together with the help of a reorientation fixture onto a red board.
 
     Randomizations
@@ -32,7 +32,7 @@ class FMBAssembly1Env(BaseEnv):
 
     Success Conditions
     ------------------
-    - All objects are in the target locations. See Assembly 1 in https://functional-manipulation-benchmark.github.io/files/index.html
+    - All objects are in the target locations. See Assembly 1 in
 
     Visualization: TODO: ADD LINK HERE
     """

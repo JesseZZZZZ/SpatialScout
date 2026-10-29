@@ -244,7 +244,7 @@ class Camera(BaseSensor):
     def get_images(self, obs) -> Tensor:
         return camera_observations_to_images(obs)
 
-    # TODO (stao): Computing camera parameters on GPU sim is not that fast, especially with mounted cameras and for model_matrix computation.
+    # TODO: Computing camera parameters on GPU sim is not that fast, especially with mounted cameras and for model_matrix computation.
     def get_params(self):
         return dict(
             extrinsic_cv=self.camera.get_extrinsic_matrix(),

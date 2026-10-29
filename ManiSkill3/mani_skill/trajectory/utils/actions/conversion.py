@@ -64,7 +64,7 @@ def delta_pose_to_pd_ee_delta(
     """
     Given a delta pose, convert it to a PDEEPose/PDEEPos Controller action
     """
-    # TODO (stao): update this code to be parallelized / use GPU
+    # TODO: update this code to be parallelized / use GPU
     assert isinstance(controller, PDEEPosController)
     assert controller.config.use_delta
     assert controller.config.normalize_action
@@ -127,7 +127,7 @@ def from_pd_joint_pos_to_ee(
         )  # do not in-place modify
         ori_env.step(ori_action)
 
-        # NOTE (stao): for high success rate of pd joint pos to pd ee delta pos/pose control, we need to use the current target qpos of the original
+        # NOTE: for high success rate of pd joint pos to pd ee delta pos/pose control, we need to use the current target qpos of the original
         # environment controller to compute the target ee pose to try and reach. this is because if we attempt to reach the original envs ee link pose
         # we may fall short and fail.
         full_qpos = ori_controller.articulation.get_qpos()

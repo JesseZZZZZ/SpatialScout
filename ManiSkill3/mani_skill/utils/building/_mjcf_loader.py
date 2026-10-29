@@ -1,7 +1,7 @@
 """
 Loader code to import MJCF xml files into SAPIEN
 
-Code partially adapted from https://github.com/NVIDIA/warp/blob/3ed2ceab824b65486c5204d2a7381d37b79fc314/warp/sim/import_mjcf.py
+Code partially adapted from
 
 Articulations are known as kinematic trees (defined by <body> tags) in Mujoco. A single .xml file can have multiple articulations
 
@@ -24,15 +24,15 @@ Notes:
     toggling render groups like Mujoco. Sometimes a MJCF might not follow this and will try and render other groups. In that case the loader supports
     indicating which other groups to add visual bodies for.
 
-    Ref: https://mujoco.readthedocs.io/en/stable/XMLreference.html#body-geom-group,
-    https://mujoco.readthedocs.io/en/latest/modeling.html#composite-objects (says group 3 is turned off)
+    Ref:
+     (says group 3 is turned off)
 
     If contype is 0, it means that geom can't collide with anything. We do this by not adding a collision shape at all.
 
     geoms under worldbody but not body tags are treated as static objects at the moment.
 
     Useful references:
-    - Collision detection: https://mujoco.readthedocs.io/en/stable/computation/index.html#collision-detection
+    - Collision detection:
 
 
 """
@@ -133,7 +133,7 @@ def _parse_orientation(attrib, use_degrees, euler_seq):
         euler_angles = np.fromstring(attrib["euler"], sep=" ")
         if use_degrees:
             euler_angles *= np.pi / 180
-        # TODO (stao): support other axes?
+        # TODO: support other axes?
         return np.array(
             euler.euler2quat(euler_angles[0], -euler_angles[1], euler_angles[2])
         )
@@ -266,10 +266,10 @@ class MJCFLoader:
             friction = _parse_vec(
                 geom_attrib, "friction", np.array([0.3, 0.3, 0.3])
             )  # maniskill default friction is 0.3
-            # NOTE (stao): we only support sliding friction at the moment. see
-            # https://mujoco.readthedocs.io/en/stable/XMLreference.html#body-geom-friction
+            # NOTE: we only support sliding friction at the moment. see
+            #
             # we might be able to imitate their torsional frictions via patch radius attributes:
-            # https://nvidia-omniverse.github.io/PhysX/physx/5.4.0/_api_build/class_px_shape.html#_CPPv4N7PxShape23setTorsionalPatchRadiusE6PxReal
+            #
             friction = friction[0]
             physx_material = PhysxMaterial(
                 static_friction=friction, dynamic_friction=friction, restitution=0
@@ -335,7 +335,7 @@ class MJCFLoader:
             else:
                 geom_radius = geom_size[0]
                 geom_half_length = geom_size[1]
-                # TODO (stao): oriented along z-axis for capsules whereas boxes are not?
+                # TODO: oriented along z-axis for capsules whereas boxes are not?
                 if geom_type in ["capsule", "cylinder"]:
                     t_visual2link = t_visual2link * Pose(
                         q=euler.euler2quat(0, np.pi / 2, 0)
@@ -447,8 +447,7 @@ class MJCFLoader:
     ):
         """sets inertial, visual/collision shapes"""
         # inertial
-        # TODO (stao)
-        # if (
+        # TODO # if (
         #     link.inertial
         #     and link.inertial.mass != 0
         #     and not np.array_equal(link.inertial.inertia, np.zeros((3, 3)))
@@ -483,7 +482,7 @@ class MJCFLoader:
             self._build_geom(geom, link_builder, defaults)
 
     def _parse_texture(self, texture: Element):
-        """Parse MJCF textures to then be referenced by materials: https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-texture
+        """Parse MJCF textures to then be referenced by materials:
 
         NOTE:
         - Procedural texture generation is currently not supported.
@@ -507,14 +506,14 @@ class MJCFLoader:
             texture = self._textures[material.get("texture")]
 
         # NOTE: Procedural texture generation is currently not supported.
-        # Defaults from https://mujoco.readthedocs.io/en/stable/XMLreference.html#asset-material
+        # Defaults from
         em_val = _parse_float(material.attrib, "emission", 0)
         rgba = np.array(_parse_vec(material.attrib, "rgba", [1, 1, 1, 1]))
         render_material = RenderMaterial(
             emission=[rgba[0] * em_val, rgba[1] * em_val, rgba[2] * em_val, 1],
             base_color=rgba,
             specular=_parse_float(material.attrib, "specular", 0),
-            # TODO (stao): double check below 2 properties are right
+            # TODO: double check below 2 properties are right
             roughness=1 - _parse_float(material.attrib, "reflectance", 0),
             metallic=_parse_float(material.attrib, "shininess", 0.5),
         )
@@ -539,7 +538,7 @@ class MJCFLoader:
         return self._defaults["__root__"]
 
     def _parse_default(self, node: Element, parent: Element):
-        """Parse a MJCF default attribute. https://mujoco.readthedocs.io/en/stable/modeling.html#default-settings explains how it works"""
+        """Parse a MJCF default attribute.  explains how it works"""
         class_name = "__root__"
         if node.tag == "default":
             if "class" in node.attrib:
@@ -791,7 +790,7 @@ class MJCFLoader:
 
         ### Parse Kinematic Trees / Articulations in World Body ###
 
-        # NOTE (stao): For now we assume there is only one articulation. Some setups like Aloha 2 are technically 2 articulations
+        # NOTE: For now we assume there is only one articulation. Some setups like Aloha 2 are technically 2 articulations
         # but you can treat it as a single one anyway
         articulation_builders: List[ArticulationBuilder] = []
         actor_builders: List[ActorBuilder] = []
@@ -868,7 +867,7 @@ class MJCFLoader:
         ### Parse equality constraints ###
         # tendon = xml.find("tendon")
         # if tendon is not None:
-        #     # TODO (stao): unclear if this actually works
+        #     # TODO: unclear if this actually works
         #     for constraint in tendon.findall("fixed"):
         #         record = self._parse_constraint(constraint)
         #         builder.mimic_joint_records.append(record)
@@ -907,7 +906,7 @@ class MJCFLoader:
         for b in actor_builders:
             actors.append(b.build())
 
-        # TODO (stao): how does mjcf specify sensors?
+        # TODO: how does mjcf specify sensors?
         # name2entity = dict()
         # for a in articulations:
         #     for l in a.links:
@@ -917,5 +916,5 @@ class MJCFLoader:
         #     name2entity[a.name] = a
         return articulations[0]
 
-    # TODO (stao): function to also load the scene in?
-    # TODO (stao): function to load camera configs?
+    # TODO: function to also load the scene in?
+    # TODO: function to load camera configs?

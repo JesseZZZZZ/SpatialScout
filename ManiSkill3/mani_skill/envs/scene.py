@@ -222,7 +222,7 @@ class ManiSkillScene:
         """internal helper function to add (mounted) cameras"""
         cameras = []
         pose = Pose.create(pose)
-        # TODO (stao): support scene idxs property for cameras in the future
+        # TODO: support scene idxs property for cameras in the future
         # move intrinsic to np and batch intrinsic if it is not batched
         if intrinsic is not None:
             intrinsic = common.to_numpy(intrinsic)
@@ -301,7 +301,7 @@ class ManiSkillScene:
         """internal helper function to add (mounted) cameras"""
         cameras = []
         pose = Pose.create(pose)
-        # TODO (stao): support scene idxs property for cameras in the future
+        # TODO: support scene idxs property for cameras in the future
         # move intrinsic to np and batch intrinsic if it is not batched
         if intrinsic is not None:
             intrinsic = common.to_numpy(intrinsic)
@@ -392,7 +392,7 @@ class ManiSkillScene:
     def _sapien_31_update_render(self):
         if self.gpu_sim_enabled:
             if self.render_system_group is None:
-                # TODO (stao): for new render system support the parallel in single scene rendering option
+                # TODO: for new render system support the parallel in single scene rendering option
                 for scene in self.sub_scenes:
                     scene.update_render()
                 self._setup_gpu_rendering()
@@ -405,7 +405,7 @@ class ManiSkillScene:
             self.sub_scenes[0].update_render()
 
     def get_contacts(self):
-        # TODO (stao): deprecate this API
+        # TODO: deprecate this API
         return self.px.get_contacts()
 
     def get_all_actors(self):
@@ -708,7 +708,7 @@ class ManiSkillScene:
             obj1: Actor | Link
             obj2: Actor | Link
         """
-        # TODO (stao): Is there any optimization improvement when putting all queries all together and fetched together
+        # TODO: Is there any optimization improvement when putting all queries all together and fetched together
         # vs multiple smaller queries? If so, might be worth exposing a helpful API for that instead of having user
         # write this code below themselves.
         if self.gpu_sim_enabled:

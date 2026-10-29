@@ -11,7 +11,7 @@ from mani_skill.utils.geometry.bounding_cylinder import aabc
 
 def sample_on_unit_sphere(rng):
     """
-    Algo from http://corysimon.github.io/articles/uniformdistn-on-sphere/
+    Algo from
     """
     v = np.zeros(3)
     while np.linalg.norm(v) < 1e-4:

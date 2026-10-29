@@ -118,7 +118,7 @@ class Link(PhysxRigidBodyComponentStruct[physx.PhysxArticulationLinkComponent]):
             merged_link.joint = merged_joint
             merged_joint.child_link = merged_link
         # remove articulation reference as it does not make sense and is only used to instantiate some properties like the physx system
-        # TODO (stao): akin to the joint merging above, we can also make a view of the articulations of each link. Is it necessary?
+        # TODO: akin to the joint merging above, we can also make a view of the articulations of each link. Is it necessary?
         merged_link.articulation = None
         merged_link.name = name
         merged_link.merged = True
@@ -152,7 +152,7 @@ class Link(PhysxRigidBodyComponentStruct[physx.PhysxArticulationLinkComponent]):
         Generates mesh objects (trimesh.Trimesh) for each managed physx link given a filter and
         saves them to self.meshes[mesh_name] in addition to returning them here.
         """
-        # TODO (stao): should we create a Mesh wrapper? that is basically trimesh.Trimesh but all batched.
+        # TODO: should we create a Mesh wrapper? that is basically trimesh.Trimesh but all batched.
         if mesh_name in self.meshes:
             return self.meshes[mesh_name]
         merged_meshes = []
@@ -165,7 +165,7 @@ class Link(PhysxRigidBodyComponentStruct[physx.PhysxArticulationLinkComponent]):
         self.meshes[mesh_name] = merged_meshes
         return merged_meshes
 
-    # TODO (stao): In future can we have some shared nice functions like getting center of mass of desired meshes (e.g. handle mesh?)
+    # TODO: In future can we have some shared nice functions like getting center of mass of desired meshes (e.g. handle mesh?)
     # def get_mesh_center_of_masses(self, mesh_name: str):
 
     def bbox(

@@ -1,5 +1,5 @@
 """
-SceneBuilder for the AI2Thor scenes, using configurations and assets stored in https://huggingface.co/datasets/hssd/ai2thor-hab
+SceneBuilder for the AI2Thor scenes, using configurations and assets stored in
 
 """
 

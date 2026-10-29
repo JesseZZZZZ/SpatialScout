@@ -15,9 +15,9 @@ def display_images(images: List[np.ndarray], dpi=100.0, format="html5_video", **
         format (str): one of ["html5_video", "jshtml"]
 
     References:
-        https://gist.github.com/foolishflyfox/e30fd8bfbb6a9cee9b1a1fa6144b209c
-        http://louistiao.me/posts/notebooks/embedding-matplotlib-animations-in-jupyter-as-interactive-javascript-widgets/
-        https://stackoverflow.com/questions/35532498/animation-in-ipython-notebook/46878531#46878531
+
+
+
     """
     h, w = images[0].shape[:2]
     fig = plt.figure(figsize=(h / dpi, w / dpi), dpi=dpi)

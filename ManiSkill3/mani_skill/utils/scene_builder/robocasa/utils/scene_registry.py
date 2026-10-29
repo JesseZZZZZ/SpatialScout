@@ -1,4 +1,4 @@
-"""Code ported over from RoboCasa: https://github.com/robocasa/robocasa/blob/main/robocasa/models/scenes/scene_registry.py"""
+"""Code ported over from RoboCasa: """
 
 from collections import OrderedDict
 from enum import IntEnum

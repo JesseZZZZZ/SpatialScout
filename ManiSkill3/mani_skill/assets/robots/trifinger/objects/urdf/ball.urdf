@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<robot name="ball" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="ball">
   <link name="ball">
     <inertial>
       <mass value=".25"/>

@@ -91,7 +91,7 @@ def inv_scale_action(action, low, high):
     return (action - 0.5 * (high + low)) / (0.5 * (high - low))
 
 
-# TODO (stao): this is dead code, remove?
+# TODO: this is dead code, remove?
 def inv_clip_and_scale_action(action, low, high):
     """Inverse of `clip_and_scale_action`."""
     low, high = np.asarray(low), np.asarray(high)

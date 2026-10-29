@@ -87,7 +87,7 @@ class Articulation(BaseStruct[physx.PhysxArticulation]):
         """
         shared_name = "_".join(physx_articulations[0].name.split("_")[1:])
 
-        # NOTE (stao): This is a little bit of a non-standard way to use @classmethod style creation functions for dataclasses
+        # NOTE: This is a little bit of a non-standard way to use @classmethod style creation functions for dataclasses
         # however generating the Joint and Link objects relies on a reference to the articulation properties so this is done as a
         # convenience
         self = cls(
@@ -334,7 +334,7 @@ class Articulation(BaseStruct[physx.PhysxArticulation]):
                 initialization, and link poses are needed to get the correct collision mesh of an entire articulation"
         else:
             self._objs[0].pose = self._objs[0].pose
-        # TODO (stao): Can we have a batched version of trimesh?
+        # TODO: Can we have a batched version of trimesh?
         meshes: List[trimesh.Trimesh] = []
 
         for i, art in enumerate(self._objs):
@@ -607,7 +607,7 @@ class Articulation(BaseStruct[physx.PhysxArticulation]):
     @property
     def qpos(self):
         if self.scene.gpu_sim_enabled:
-            # NOTE (stao): cuda_articulation_qpos is of shape (M, N) where M is the total number of articulations in the physx scene,
+            # NOTE: cuda_articulation_qpos is of shape (M, N) where M is the total number of articulations in the physx scene,
             # N is the max dof of all those articulations.
             return self.px.cuda_articulation_qpos.torch()[
                 self._data_index, : self.max_dof
@@ -700,7 +700,7 @@ class Articulation(BaseStruct[physx.PhysxArticulation]):
     # Functions not part of SAPIEN API provided for conveniency
     # -------------------------------------------------------------------------- #
     def create_pinocchio_model(self):
-        # NOTE (stao): This is available but not typed in SAPIEN
+        # NOTE: This is available but not typed in SAPIEN
         if self.scene.gpu_sim_enabled:
             raise NotImplementedError(
                 "Cannot create a pinocchio model when GPU is enabled."
@@ -720,7 +720,7 @@ class Articulation(BaseStruct[physx.PhysxArticulation]):
         """
         Set drive targets on active joints. Joint indices are required to be given for GPU sim, and joint objects are required for the CPU sim
 
-        TODO (stao): can we use joint indices for the CPU sim as well? Some global joint indices?
+        TODO: can we use joint indices for the CPU sim as well? Some global joint indices?
         """
         if self.scene.gpu_sim_enabled:
             targets = common.to_tensor(targets, device=self.device)
@@ -743,7 +743,7 @@ class Articulation(BaseStruct[physx.PhysxArticulation]):
         """
         Set drive velocity targets on active joints. Joint indices are required to be given for GPU sim, and joint objects are required for the CPU sim
 
-        TODO (stao): can we use joint indices for the CPU sim as well? Some global joint indices?
+        TODO: can we use joint indices for the CPU sim as well? Some global joint indices?
         """
         if self.scene.gpu_sim_enabled:
             targets = common.to_tensor(targets, device=self.device)

@@ -7,7 +7,7 @@ from mani_skill.agents.controllers import *
 from mani_skill.agents.registration import register_agent
 from mani_skill.sensors.camera import CameraConfig
 
-# TODO (stao): there is a bug currently with the full H1+hands robot. It breaks the simulation at the moment when all the fingers are added to the body.
+# TODO: there is a bug currently with the full H1+hands robot. It breaks the simulation at the moment when all the fingers are added to the body.
 # @register_agent()
 # class UnitreeH1WithHands(BaseAgent):
 #     uid = "unitree_h1_with_hands"

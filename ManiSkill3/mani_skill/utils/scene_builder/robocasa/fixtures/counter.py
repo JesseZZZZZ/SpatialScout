@@ -157,7 +157,7 @@ class Counter(Fixture):
                         mipmap_levels=1,
                     )
                 )
-                # note (stao): maniskill/sapien doesn't have the same procedural texture repeat functionality yet so this is a hack to model the textures
+                # note : maniskill/sapien doesn't have the same procedural texture repeat functionality yet so this is a hack to model the textures
                 if "top" in shortname:
                     from transforms3d.euler import euler2quat
 
@@ -171,7 +171,7 @@ class Counter(Fixture):
                         mat=visual_record.material,
                         texture_repeat=[1, 1],
                     )
-        # TODO (stao): is base color ever used?
+        # TODO: is base color ever used?
         # tex_name = get_texture_name_from_file(self.top_texture) + "_2d"
         # texture.set("name", tex_name)
         # texture.set("file", self.top_texture)

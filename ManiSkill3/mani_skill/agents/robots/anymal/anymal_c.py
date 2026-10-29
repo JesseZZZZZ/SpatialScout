@@ -1,4 +1,4 @@
-# TODO (stao): Anymal may not be modelled correctly or efficiently at the moment
+# TODO: Anymal may not be modelled correctly or efficiently at the moment
 import numpy as np
 import sapien
 import torch
@@ -82,7 +82,7 @@ class ANYmalC(BaseAgent):
             normalize_action=False,
             use_delta=False,
         )
-        # TODO (stao): For quadrupeds perhaps we disable gravity for all links except the root?
+        # TODO: For quadrupeds perhaps we disable gravity for all links except the root?
         controller_configs = dict(
             pd_joint_delta_pos=dict(
                 body=pd_joint_delta_pos, balance_passive_force=False

@@ -1,4 +1,4 @@
-"""Adapted from https://github.com/google-deepmind/dm_control/blob/main/dm_control/suite/hopper.py"""
+"""Adapted from """
 
 import os
 from typing import Any, Dict, Optional, Union

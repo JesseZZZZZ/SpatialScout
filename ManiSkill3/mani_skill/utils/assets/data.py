@@ -26,6 +26,10 @@ class DataSource:
     """name to change the downloaded file to. If None, will not change the name"""
     output_dir: str = ASSET_DIR
 
+    def __post_init__(self):
+        if not self.url:
+            self.url = os.environ.get("MANISKILL_ASSET_URL", "")
+
 
 DATA_SOURCES: Dict[str, DataSource] = {}
 """Data sources map data source IDs to their respective DataSource objects which contain info on what the data is and where to download it"""
@@ -41,32 +45,32 @@ def is_data_source_downloaded(data_source_id: str):
 def initialize_data_sources():
     DATA_SOURCES["ycb"] = DataSource(
         source_type="task_assets",
-        url="https://huggingface.co/datasets/haosulab/ManiSkill2/resolve/main/data/mani_skill2_ycb.zip",
+        url="",
         target_path="assets/mani_skill2_ycb",
         checksum="174001ba1003cc0c5adda6453f4433f55ec7e804f0f0da22d015d525d02262fb",
     )
     DATA_SOURCES["pick_clutter_ycb_configs"] = DataSource(
         source_type="task_assets",
-        url="https://storage1.ucsd.edu/datasets/ManiSkill2022-assets/pick_clutter/ycb_train_5k.json.gz",
+        url="",
         target_path="tasks/pick_clutter",
         checksum="70ec176c7036f326ea7813b77f8c03bea9db5960198498957a49b2895a9ec338",
     )
     DATA_SOURCES["assembling_kits"] = DataSource(
         source_type="task_assets",
-        url="https://storage1.ucsd.edu/datasets/ManiSkill2022-assets/assembling_kits_v1.zip",
+        url="",
         target_path="tasks/assembling_kits",
         checksum="e3371f17a07a012edaa3a0b3604fb1577f3fb921876c3d5ed59733dd75a6b4a0",
     )
     DATA_SOURCES["panda_avoid_obstacles"] = DataSource(
         source_type="task_assets",
-        url="https://storage1.ucsd.edu/datasets/ManiSkill2022-assets/avoid_obstacles/panda_train_2k.json.gz",
+        url="",
         target_path="tasks/avoid_obstacles",
         checksum="44dae9a0804172515c290c1f49a1e7e72d76e40201a2c5c7d4a3ccd43b4d5be4",
     )
 
     DATA_SOURCES["bridge_v2_real2sim"] = DataSource(
         source_type="task_assets",
-        url="https://huggingface.co/datasets/haosulab/ManiSkill_bridge_v2_real2sim/resolve/main/bridge_v2_real2sim_dataset.zip",
+        url="",
         target_path="tasks/bridge_v2_real2sim_dataset",
         checksum="618512a205b4528cafecdad14b1788ed1130879f3064deb406516ed5b9c5ba92",
     )
@@ -85,7 +89,7 @@ def initialize_data_sources():
             uid = f"partnet_mobility/{model_id}"
             DATA_SOURCES[uid] = DataSource(
                 source_type="objects",
-                url=f"https://storage1.ucsd.edu/datasets/ManiSkill2022-assets/partnet_mobility/dataset/{model_id}.zip",
+                url="",
                 target_path=ASSET_DIR / "partnet_mobility" / "dataset" / model_id,
             )
             category_uids[category].append(uid)
@@ -115,78 +119,78 @@ def initialize_data_sources():
     # ---------------------------------------------------------------------------- #
     DATA_SOURCES["ReplicaCAD"] = DataSource(
         source_type="scene",
-        hf_repo_id="haosulab/ReplicaCAD",
+        hf_repo_id=os.environ.get("MANISKILL_REPLICACAD_REPO_ID"),
         target_path="scene_datasets/replica_cad_dataset",
     )
 
     DATA_SOURCES["ReplicaCADRearrange"] = DataSource(
         source_type="scene",
-        url="https://huggingface.co/datasets/haosulab/ReplicaCADRearrange/resolve/main/rearrange.zip",
+        url="",
         target_path="scene_datasets/replica_cad_dataset/rearrange",
     )
 
     DATA_SOURCES["AI2THOR"] = DataSource(
         source_type="scene",
-        url="https://huggingface.co/datasets/haosulab/AI2THOR/resolve/main/ai2thor.zip",
+        url="",
         target_path="scene_datasets/ai2thor",
     )
 
     DATA_SOURCES["RoboCasa"] = DataSource(
         source_type="scene",
-        url="https://huggingface.co/datasets/haosulab/RoboCasa/resolve/main/robocasa_dataset.zip",
+        url="",
         target_path="scene_datasets/robocasa_dataset",
     )
 
     # Robots
     DATA_SOURCES["xmate3_robotiq"] = DataSource(
         source_type="robot",
-        url="https://storage1.ucsd.edu/datasets/ManiSkill2022-assets/xmate3_robotiq.zip",
+        url="",
         target_path="robots/xmate3_robotiq",
         checksum="ddda102a20eb41e28a0a501702e240e5d7f4084221a44f580e729f08b7c12d1a",
     )
     DATA_SOURCES["ur10e"] = DataSource(
         source_type="robot",
-        url="https://github.com/haosulab/ManiSkill-UR10e/archive/refs/tags/v0.1.0.zip",
+        url="",
         target_path="robots/ur10e",
     )
     DATA_SOURCES["anymal_c"] = DataSource(
         source_type="robot",
-        url="https://github.com/haosulab/ManiSkill-ANYmalC/archive/refs/tags/v0.1.1.zip",
+        url="",
         target_path="robots/anymal_c",
     )
     DATA_SOURCES["unitree_h1"] = DataSource(
         source_type="robot",
-        url="https://github.com/haosulab/ManiSkill-UnitreeH1/archive/refs/tags/v0.1.0.zip",
+        url="",
         target_path="robots/unitree_h1",
     )
     DATA_SOURCES["unitree_g1"] = DataSource(
         source_type="robot",
-        url="https://github.com/haosulab/ManiSkill-UnitreeG1/archive/refs/tags/v0.1.0.zip",
+        url="",
         target_path="robots/unitree_g1",
     )
     DATA_SOURCES["unitree_go2"] = DataSource(
         source_type="robot",
-        url="https://github.com/haosulab/ManiSkill-UnitreeGo2/archive/refs/tags/v0.1.1.zip",
+        url="",
         target_path="robots/unitree_go2",
     )
     DATA_SOURCES["stompy"] = DataSource(
         source_type="robot",
-        url="https://github.com/haosulab/ManiSkill-Stompy/archive/refs/tags/v0.1.0.zip",
+        url="",
         target_path="robots/stompy",
     )
     DATA_SOURCES["widowx250s"] = DataSource(
         source_type="robot",
-        url="https://github.com/haosulab/ManiSkill-WidowX250S/archive/refs/tags/v0.2.0.zip",
+        url="",
         target_path="robots/widowx",
     )
     DATA_SOURCES["googlerobot"] = DataSource(
         source_type="robot",
-        url="https://github.com/haosulab/ManiSkill-GoogleRobot/archive/refs/tags/v0.1.0.zip",
+        url="",
         target_path="robots/googlerobot",
     )
     DATA_SOURCES["robotiq_2f"] = DataSource(
         source_type="robot",
-        url="https://github.com/haosulab/ManiSkill-Robotiq_2F/archive/refs/tags/v0.1.0.zip",
+        url="",
         target_path="robots/robotiq_2f",
     )
 

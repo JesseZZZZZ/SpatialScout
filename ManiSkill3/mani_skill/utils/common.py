@@ -64,7 +64,7 @@ def dict_merge(dct: dict, merge_dct: dict):
             dct[k] = merge_dct[k]
 
 
-# TODO (stao): Consolidate this function with the one above..
+# TODO: Consolidate this function with the one above..
 def merge_dicts(ds: Sequence[Dict], asarray=False):
     """Merge multiple dicts with the same keys to a single one."""
     # NOTE(jigu): To be compatible with generator, we only iterate once.
@@ -123,7 +123,7 @@ def index_dict_array(x1, idx: Union[int, slice], inplace=True):
             return out
 
 
-# TODO (stao): this code can be simplified
+# TODO: this code can be simplified
 def to_tensor(array: Array, device: Optional[Device] = None):
     """
     Maps any given sequence to a torch tensor on the CPU/GPU. If physx gpu is not enabled then we use CPU, otherwise GPU, unless specified
@@ -140,7 +140,7 @@ def to_tensor(array: Array, device: Optional[Device] = None):
     elif isinstance(array, torch.Tensor):
         ret = array.to(device)
     elif isinstance(array, np.ndarray):
-        # TODO (stao): check of doing .to(device) is slow even if its just CPU
+        # TODO: check of doing .to(device) is slow even if its just CPU
         if array.dtype == np.uint16:
             array = array.astype(np.int32)
         elif array.dtype == np.uint32:
@@ -172,7 +172,7 @@ def to_cpu_tensor(array: Array):
         return torch.tensor(array).cpu()
 
 
-# TODO (stao): Clean up this code
+# TODO: Clean up this code
 def flatten_state_dict(
     state_dict: dict, use_torch=False, device: Optional[Device] = None
 ) -> Array:
@@ -285,7 +285,7 @@ def compute_angle_between(x1: torch.Tensor, x2: torch.Tensor):
     return torch.arccos(dot_prod)
 
 
-# TODO (stao): verfy torch.jit.script provides actual speedups in inference times
+# TODO: verfy torch.jit.script provides actual speedups in inference times
 def quat_diff_rad(a: torch.Tensor, b: torch.Tensor) -> torch.Tensor:
     """
     Get the difference in radians between two quaternions.

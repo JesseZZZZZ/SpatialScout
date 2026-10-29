@@ -40,7 +40,7 @@ for env_id in [
     "TwoRobotPickCube-v1",
 ]:
     DATASET_SOURCES[env_id] = DemoDatasetSource(
-        raw_dataset_url=f"https://huggingface.co/datasets/haosulab/ManiSkill_Demonstrations/resolve/main/demos/{env_id}.zip?download=true"
+        raw_dataset_url=os.environ.get("MANISKILL_DEMO_URL_TEMPLATE", "").replace("{env_id}", env_id)
     )
 
 pbar = None
@@ -59,6 +59,8 @@ def tqdmhook(t):
 
 
 def download_file(base_path, url, verbose=True):
+    if not url:
+        raise ValueError("Set MANISKILL_DEMO_URL_TEMPLATE before downloading demonstrations")
     filename = os.path.basename(urlparse(url).path)
     local_path = os.path.join(base_path, filename)
     tmp_local_path = os.path.join(base_path, filename + ".tmp")

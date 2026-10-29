@@ -106,11 +106,11 @@ class MujocoObject:
         self.quat = euler2quat(*euler)
 
     def set_scale(self, scale):
-        """Based on https://github.com/ARISE-Initiative/robosuite/blob/robocasa_v0.1/robosuite/models/objects/objects.py#L507.
+        """Based on
 
         scale is a float or a array with 3 floats
         """
-        # NOTE (stao): this is a hacky way to try and imitate the original robocasa scaling code.
+        # NOTE: this is a hacky way to try and imitate the original robocasa scaling code.
         if isinstance(scale, float) or isinstance(scale, int):
             scale = np.array([scale, scale, scale])
         self.loader.scale = scale

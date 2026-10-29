@@ -325,7 +325,7 @@ class BaseBridgeEnv(BaseDigitalTwinEnv):
                 if this_available_model_scales is None:
                     model_scales.append(1.0)
                 else:
-                    # TODO (stao): use the batched RNG
+                    # TODO: use the batched RNG
                     model_scales[model_id] = self.np_random.choice(
                         this_available_model_scales
                     )

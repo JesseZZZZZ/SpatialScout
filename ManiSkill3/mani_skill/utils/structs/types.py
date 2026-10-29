@@ -51,7 +51,7 @@ class SceneConfig:
     def dict(self):
         return {k: v for k, v in asdict(self).items()}
 
-    # cpu_workers=min(os.cpu_count(), 4) # NOTE (stao): use this if we use step_start and step_finish to enable CPU workloads between physx steps.
+    # cpu_workers=min(os.cpu_count(), 4) # NOTE: use this if we use step_start and step_finish to enable CPU workloads between physx steps.
     # NOTE (fxiang): PCM is enabled for GPU sim regardless.
     # NOTE (fxiang): smaller contact_offset is faster as less contacts are considered, but some contacts may be missed if distance changes too fast
     # NOTE (fxiang): solver iterations 15 is recommended to balance speed and accuracy. If stable grasps are necessary >= 20 is preferred.

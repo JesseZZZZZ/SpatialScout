@@ -31,7 +31,7 @@ def create_viewer(viewer_camera_config: CameraConfig):
             resolutions=(viewer_camera_config.width, viewer_camera_config.height)
         )
     elif SAPIEN_RENDER_SYSTEM == "3.1":
-        # TODO (stao): figure out how shader pack configs can be set at run time
+        # TODO: figure out how shader pack configs can be set at run time
         viewer = Viewer(
             resolutions=(viewer_camera_config.width, viewer_camera_config.height),
             shader_pack=sapien.render.get_shader_pack(

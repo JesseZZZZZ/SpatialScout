@@ -35,7 +35,7 @@ class MJCFObject(MujocoObject):
             raise Exception("got invalid scale: {}".format(scale))
         scale = np.array(scale)
 
-        # note (stao): the values below are unused atm
+        # note : the values below are unused atm
         self.solimp = solimp
         self.solref = solref
         self.density = density

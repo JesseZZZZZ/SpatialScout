@@ -205,7 +205,7 @@ def get_articulation_padded_state(articulation: physx.PhysxArticulation, max_dof
     return padded_state
 
 
-# TODO (stao): Synchronize the contacts APIs as well as getting forces/impulses
+# TODO: Synchronize the contacts APIs as well as getting forces/impulses
 # -------------------------------------------------------------------------- #
 # Contact
 #
@@ -317,7 +317,7 @@ def look_at(eye, target, up=(0, 0, 1)) -> Pose:
     """Get the camera pose in SAPIEN by the Look-At method.
 
     Note:
-        https://www.scratchapixel.com/lessons/mathematics-physics-for-computer-graphics/lookat-function
+
         The SAPIEN camera follows the convention: (forward, right, up) = (x, -y, z)
         while the OpenGL camera follows (forward, right, up) = (-z, x, y)
         Note that the camera coordinate system (OpenGL) is left-hand.
@@ -363,7 +363,7 @@ def look_at(eye, target, up=(0, 0, 1)) -> Pose:
 
 
 def hex2rgba(h, correction=True):
-    # https://stackoverflow.com/a/29643643
+    #
     h = h.lstrip("#")
     r, g, b = tuple(int(h[i : i + 2], 16) / 255 for i in (0, 2, 4))
     rgba = np.array([r, g, b, 1])
@@ -382,7 +382,7 @@ def set_render_material(material: sapien.render.RenderMaterial, **kwargs):
 
 
 def set_articulation_render_material(articulation: physx.PhysxArticulation, **kwargs):
-    # TODO: (stao): Avoid using this function as it does not play nice with render server
+    # TODO: : Avoid using this function as it does not play nice with render server
     # we should edit the urdf files to have the correct materials in the first place and remove this function in the future
     for link in articulation.get_links():
         component = link.entity.find_component_by_type(

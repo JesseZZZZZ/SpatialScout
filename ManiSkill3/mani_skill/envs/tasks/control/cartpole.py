@@ -1,4 +1,4 @@
-"""Adapted from https://github.com/google-deepmind/dm_control/blob/main/dm_control/suite/cartpole.py"""
+"""Adapted from """
 
 import os
 from typing import Any, Dict, Optional, Union
@@ -188,7 +188,7 @@ class CartpoleBalanceEnv(CartpoleEnv):
     - Pole is lower than the horizontal plane
     """
 
-    _sample_video_link = "https://github.com/haosulab/ManiSkill/raw/main/figures/environment_demos/MS-CartpoleBalance-v1_rt.mp4"
+    _sample_video_link = ""
 
     def __init__(self, *args, **kwargs):
         super().__init__(

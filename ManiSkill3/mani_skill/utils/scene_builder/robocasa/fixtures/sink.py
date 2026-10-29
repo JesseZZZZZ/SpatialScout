@@ -22,7 +22,7 @@ class Sink(Fixture):
             **kwargs
         )
 
-    # TODO (stao): Add fake water
+    # TODO: Add fake water
     def update_state(self, env):
         """
         Updates the water flowing of the sink based on the handle_joint position

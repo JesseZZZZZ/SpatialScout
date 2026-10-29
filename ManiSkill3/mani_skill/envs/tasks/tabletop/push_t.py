@@ -66,7 +66,7 @@ class WhiteTableSceneBuilder(TableSceneBuilder):
 class PushTEnv(BaseEnv):
     """
     **Task Description:**
-    A simulated version of the real-world push-T task from Diffusion Policy: https://diffusion-policy.cs.columbia.edu/
+    A simulated version of the real-world push-T task from Diffusion Policy:
 
     In this task, the robot needs to:
     1. Precisely push the T-shaped block into the target region, and
@@ -80,7 +80,7 @@ class PushTEnv(BaseEnv):
     - The T block covers 90% of the 2D goal T's area
     """
 
-    _sample_video_link = "https://github.com/haosulab/ManiSkill/raw/main/figures/environment_demos/PushT-v1_rt.mp4"
+    _sample_video_link = ""
     SUPPORTED_ROBOTS = ["panda_stick"]
     agent: PandaStick
 
@@ -175,7 +175,7 @@ class PushTEnv(BaseEnv):
         def create_tee(name="tee", target=False, base_color=TARGET_RED):
             # dimensions of boxes that make tee
             # box2 is same as box1, except (3/4) the lenght, and rotated 90 degrees
-            # these dimensions are an exact replica of the 3D tee model given by diffusion policy: https://cad.onshape.com/documents/f1140134e38f6ed6902648d5/w/a78cf81827600e4ff4058d03/e/f35f57fb7589f72e05c76caf
+            # these dimensions are an exact replica of the 3D tee model given by diffusion policy:
             box1_half_w = 0.2 / 2
             box1_half_h = 0.05 / 2
             half_thickness = 0.04 / 2 if not target else 1e-4

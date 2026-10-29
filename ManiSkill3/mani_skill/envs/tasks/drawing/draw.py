@@ -33,7 +33,7 @@ class TableTopFreeDrawEnv(BaseEnv):
     None
     """
 
-    _sample_video_link = "https://github.com/haosulab/ManiSkill/raw/main/figures/environment_demos/TableTopFreeDraw-v1_rt.mp4"
+    _sample_video_link = ""
 
     MAX_DOTS = 1010
     """
@@ -151,7 +151,7 @@ class TableTopFreeDrawEnv(BaseEnv):
                 self.dots.append(actor)
 
     def _initialize_episode(self, env_idx: torch.Tensor, options: dict):
-        # NOTE (stao): for simplicity this task cannot handle partial resets
+        # NOTE: for simplicity this task cannot handle partial resets
         self.draw_step = 0
         with torch.device(self.device):
             self.table_scene.initialize(env_idx)

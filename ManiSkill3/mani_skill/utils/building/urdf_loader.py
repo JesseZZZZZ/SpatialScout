@@ -36,7 +36,7 @@ class URDFLoader(SapienURDFLoader):
                 a.set_name(f"{self.name}")
             if self.disable_self_collisions:
                 for l in a.link_builders:
-                    # NOTE (stao): Currently this may not be working as intended
+                    # NOTE: Currently this may not be working as intended
                     l.collision_groups[2] |= 1 << 29
         for i, b in enumerate(actor_builders):
             b.set_name(f"{self.name}-actor-{i}")

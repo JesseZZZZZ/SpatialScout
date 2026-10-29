@@ -16,7 +16,7 @@ from mani_skill.utils.structs.pose import vectorize_pose
 @register_agent()
 class TriFingerPro(BaseAgent):
     """
-    Modified from https://github.com/NVIDIA-Omniverse/IsaacGymEnvs/blob/main/isaacgymenvs/tasks/trifinger.py
+    Modified from
 
     """
 

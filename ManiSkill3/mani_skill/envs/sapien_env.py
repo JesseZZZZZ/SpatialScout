@@ -683,7 +683,7 @@ class BaseEnv(gym.Env):
         self._reconfig_counter = self.reconfiguration_freq
 
         # delete various cached properties and reinitialize
-        # TODO (stao): The code is 3 lines because you have to initialize it once somewhere...
+        # TODO: The code is 3 lines because you have to initialize it once somewhere...
         self.segmentation_id_map
         del self.segmentation_id_map
         self.segmentation_id_map
@@ -697,7 +697,7 @@ class BaseEnv(gym.Env):
         """Loads all objects like actors and articulations into the scene. Called by `self._reconfigure`. Given options argument
         is the same options dictionary passed to the self.reset function"""
 
-    # TODO (stao): refactor this into sensor API
+    # TODO: refactor this into sensor API
     def _setup_sensors(self, options: dict):
         """Setup sensor configurations and the sensor objects in the scene. Called by `self._reconfigure`"""
 
@@ -805,7 +805,7 @@ class BaseEnv(gym.Env):
         e.g. randomize object positions, randomize assets etc. Episode RNG is accessible by using `self._batched_episode_rng` which is numpy based and `torch.rand`
         which can be used to generate random data on the GPU directly and is seeded. Note that it is recommended to use `self._batched_episode_rng`
         if you need to ensure during reconfiguration the same objects are loaded. Reproducibility and seeding when there is GPU and CPU simulation can be tricky and we recommend reading
-        the documentation for more recommendations and details on RNG https://maniskill.readthedocs.io/en/latest/user_guide/concepts/rng.html
+        the documentation for more recommendations and details on RNG
 
         Upon environment creation via gym.make, the main RNG is set with fixed seeds of 2022 to 2022 + num_envs - 1 (seed is just 2022 if there is only one environment)
         During each reset call, if seed is None, main RNG is unchanged and an episode seed is sampled from the main RNG to create the episode RNG.
@@ -839,7 +839,7 @@ class BaseEnv(gym.Env):
         else:
             self._set_episode_rng(seed, env_idx)
 
-        # TODO (stao): Reconfiguration when there is partial reset might not make sense and certainly broken here now.
+        # TODO: Reconfiguration when there is partial reset might not make sense and certainly broken here now.
         # Solution to resolve that would be to ensure tasks that do reconfigure more than once are single-env only / cpu sim only
         # or disable partial reset features explicitly for tasks that have a reconfiguration frequency
         self.scene._reset_mask = torch.zeros(
@@ -941,7 +941,7 @@ class BaseEnv(gym.Env):
         if self.gpu_sim_enabled:
             self.scene._gpu_apply_all()
             self.scene._gpu_fetch_all()
-            # TODO (stao): This may be an unnecessary fetch and apply.
+            # TODO: This may be an unnecessary fetch and apply.
 
     # -------------------------------------------------------------------------- #
     # Step
@@ -1318,7 +1318,7 @@ class BaseEnv(gym.Env):
         else:
             raise NotImplementedError(f"Unsupported render mode {self.render_mode}.")
 
-    # TODO (stao): re implement later
+    # TODO: re implement later
     # ---------------------------------------------------------------------------- #
     # Advanced
     # ---------------------------------------------------------------------------- #

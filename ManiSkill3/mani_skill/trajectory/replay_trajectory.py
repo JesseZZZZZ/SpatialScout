@@ -31,7 +31,7 @@ class Args:
     """Which simulation backend to use. Can be 'auto', 'cpu', 'gpu'"""
     obs_mode: Annotated[Optional[str], tyro.conf.arg(aliases=["-o"])] = None
     """Target observation mode to record in the trajectory. See
-    https://maniskill.readthedocs.io/en/latest/user_guide/concepts/observation.html for a full list of supported observation modes."""
+     for a full list of supported observation modes."""
     target_control_mode: Annotated[Optional[str], tyro.conf.arg(aliases=["-c"])] = None
     """Target control mode to convert the demonstration actions to.
     Note that not all control modes can be converted to others successfully and not all robots have easy to convert control modes.

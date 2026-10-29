@@ -18,7 +18,7 @@ from mani_skill.utils.assets.data import DATA_GROUPS, DATA_SOURCES
 
 def prompt_yes_no(message):
     r"""Prints a message and prompts the user for "y" or "n" returning True or False."""
-    # https://github.com/facebookresearch/habitat-sim/blob/main/src_python/habitat_sim/utils/datasets_download.py
+    #
     print("\n-------------------------")
     print(message)
     while True:
@@ -35,7 +35,7 @@ def sha256sum(filename, chunk_size=4096):
     """Computes the SHA256 checksum of a file.
 
     See also:
-        https://www.quickprogrammingtips.com/python/how-to-calculate-sha256-hash-of-a-file-in-python.html
+
     """
     sha256_hash = hashlib.sha256()
     with open(filename, "rb") as f:
@@ -64,6 +64,8 @@ def download(
     non_interactive=True,
 ):
     """download a given data source"""
+    if not data_source.url and not data_source.hf_repo_id:
+        raise ValueError("Attach the supplied local assets or set MANISKILL_ASSET_URL before downloading")
     output_dir = Path(data_source.output_dir)
     # Create output directory
     if not output_dir.exists():

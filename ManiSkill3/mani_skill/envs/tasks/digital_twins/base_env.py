@@ -17,7 +17,7 @@ from mani_skill.utils.structs.types import SimConfig
 class BaseDigitalTwinEnv(BaseEnv):
     """Base Environment class for easily setting up evaluation digital twins for real2sim and sim2real
 
-    This is based on the [SIMPLER](https://simpler-env.github.io/) and currently has the following tricks for
+    This is based on the SIMPLER and currently has the following tricks for
     making accurate simulated environments of real world datasets
 
     Greenscreening: Add a greenscreened real image to the background to make the images more realistic and more closer to the distribution
@@ -45,7 +45,7 @@ class BaseDigitalTwinEnv(BaseEnv):
                     raise FileNotFoundError(
                         f"rgb_overlay_path {path} is not found."
                         "If you installed this repo through 'pip install .' , "
-                        "you can download this directory https://github.com/simpler-env/ManiSkill2_real2sim/tree/main/data to get the real-world image overlay assets. "
+                        "you can download this directory  to get the real-world image overlay assets. "
                     )
                 self._rgb_overlay_images[camera_name] = cv2.cvtColor(
                     cv2.imread(path), cv2.COLOR_BGR2RGB
